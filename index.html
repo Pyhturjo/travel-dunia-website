@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Travel Dunia — Bangladesh's trusted travel partner. Premium tour packages, airline tickets, visa processing & Umrah packages. Book your dream trip today!">
+  <meta name="keywords" content="travel agency Bangladesh, tour packages, Maldives tours, Dubai tours, Thailand packages, Umrah packages, air ticket Bangladesh">
+  <meta property="og:title" content="Travel Dunia — Explore The World With Us">
+  <meta property="og:description" content="Premium tour packages & travel solutions from Bangladesh. Maldives, Dubai, Thailand, Umrah & more.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:url" content="https://traveldunia.com.bd">
+  <title>Travel Dunia — Explore The World With Us</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+<!--
+     NAVIGATION
+ -->
+<header id="siteHeader">
+  <div class="container">
+    <div class="nav-inner">
+
+      <a href="#hero" class="nav-logo">
+        <img src="logo.png" alt="Travel Dunia Logo">
+        <div class="nav-logo-text">
+          Travel Dunia
+          <small>Explore The World With Us</small>
+        </div>
+      </a>
+
+      <nav id="mainNav" role="navigation" aria-label="Main navigation">
+        <a href="#hero">Home</a>
+        <a href="#why">About</a>
+        <a href="#tours">Tours</a>
+        <a href="#airlines">Airlines</a>
+        <a href="#visa">Visa</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav-cta">📲 Book Now</a>
+      </nav>
+
+      <button id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </div>
+</header>
+
+
+<!-- 
+     HERO — Full-screen slider + search card
+ -->
+<section id="hero" aria-label="Hero">
+
+  <!-- Background slides -->
+  <div class="hero-slides-wrap" aria-hidden="true">
+    <div id="heroSlides">
+      <div class="hs hero-slide-1"></div>
+      <div class="hs hero-slide-2"></div>
+      <div class="hs hero-slide-3"></div>
+    </div>
+  </div>
+
+  <!-- Prev / Next arrows -->
+  <button class="hero-nav-btn" id="hPrev" aria-label="Previous slide">&#8592;</button>
+  <button class="hero-nav-btn" id="hNext" aria-label="Next slide">&#8594;</button>
+
+  <!-- Slide dots — positioned ABOVE the search card -->
+  <div class="hero-dots" role="tablist" aria-label="Slide indicators">
+    <div class="hd active" data-i="0" role="tab" aria-label="Slide 1"></div>
+    <div class="hd"        data-i="1" role="tab" aria-label="Slide 2"></div>
+    <div class="hd"        data-i="2" role="tab" aria-label="Slide 3"></div>
+  </div>
+
+  <!-- Hero text content -->
+  <div class="hero-content">
+    <div class="container">
+      <div class="hero-text">
+        <div class="hero-badge"><span class="hero-badge-dot"></span>✈️ Bangladesh's Trusted Travel Partner</div>
+        <h1 class="hero-title">
+          Explore the World<br>with <em>Travel Dunia</em>
+        </h1>
+        <p class="hero-subtitle">
+          Premium tour packages, airline tickets &amp; complete travel solutions
+          from Bangladesh. Your dream destination awaits.
+        </p>
+        <div class="hero-actions">
+          <a href="#tours"   class="btn btn-primary">🌍 View Tour Packages</a>
+          <a href="#contact" class="btn btn-ghost">📞 Talk to Expert</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search card — floats over the next section -->
+  <div class="hero-search">
+    <div class="container">
+      <form class="search-card" id="searchForm" role="search">
+        <div class="search-field">
+          <label for="s-dest">Destination</label>
+          <select id="s-dest" name="dest">
+            <option value="">All Destinations</option>
+            <option value="maldives">🇲🇻 Maldives</option>
+            <option value="thailand">🇹🇭 Thailand</option>
+            <option value="dubai">🇦🇪 Dubai</option>
+            <option value="malaysia">🇲🇾 Malaysia</option>
+            <option value="singapore">🇸🇬 Singapore</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label for="s-type">Tour Type</label>
+          <select id="s-type" name="type">
+            <option value="">Any Type</option>
+            <option>Beach &amp; Island</option>
+            <option>Adventure</option>
+            <option>Cultural</option>
+            <option>Honeymoon</option>
+            <option>Family</option>
+            <option>Umrah</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label for="s-pax">Travelers</label>
+          <select id="s-pax" name="pax">
+            <option value="1">1 Person</option>
+            <option value="2" selected>2 People</option>
+            <option value="4">3–4 People</option>
+            <option value="5">5+ Group</option>
+          </select>
+        </div>
+        <button type="submit" class="search-btn">🔍 Search Tours</button>
+      </form>
+      <p class="search-hint">⚡ Searching will filter our available tour packages below</p>
+    </div>
+  </div>
+
+</section><!-- /#hero -->
+
+
+<!--
+     WHY CHOOSE US
+ -->
+<section id="why" aria-labelledby="why-title">
+  <div class="container">
+    <div class="why-grid">
+
+      <!-- Left: Image -->
+      <div class="why-image anim">
+      <img class="why-image-main" src="./images/l1.jpg" alt="Happy travelers exploring together" width="560" height="420" loading="lazy">
+<img class="why-image-float" src="./images/l2.jpg" alt="Beautiful destination view" width="200" height="200" loading="lazy">
+        <div class="why-float-badge">
+          <div class="fi">🏆</div>
+          <div>
+            <div class="fl">5+ Years</div>
+            <div class="fs">Trusted Service</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="anim" style="transition-delay:.15s">
+        <div class="tag">✦ Why Travel Dunia</div>
+        <h2 id="why-title" class="section-title">
+          Your Most Trusted<br>Travel Partner
+        </h2>
+        <p class="section-sub">
+          From Cox's Bazar to the Maldives, Umrah to Europe — we craft unforgettable
+          journeys with end-to-end support. Based in Bangladesh, serving the world.
+        </p>
+        <div class="why-features">
+          <div class="why-feat">
+            <div class="fi">✈️</div>
+            <div><h4>Best Price Guarantee</h4><p>Unbeatable fares on flights, hotels &amp; packages.</p></div>
+          </div>
+          <div class="why-feat">
+            <div class="fi">🛡️</div>
+            <div><h4>Visa Assistance</h4><p>Expert processing for 100+ countries.</p></div>
+          </div>
+          <div class="why-feat">
+            <div class="fi">📱</div>
+            <div><h4>24/7 Support</h4><p>WhatsApp or call us anytime, anywhere.</p></div>
+          </div>
+          <div class="why-feat">
+            <div class="fi">🌙</div>
+            <div><h4>Umrah &amp; Hajj</h4><p>Complete holy pilgrimage packages.</p></div>
+          </div>
+          <div class="why-feat">
+            <div class="fi">🏨</div>
+            <div><h4>Hotel Booking</h4><p>Top-rated stays at best available rates.</p></div>
+          </div>
+          <div class="why-feat">
+            <div class="fi">🎒</div>
+            <div><h4>Custom Packages</h4><p>Tailor-made for every budget &amp; style.</p></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- 
+     TOURS / HOT DEALS
+-->
+<section id="tours" class="section-pad" aria-labelledby="tours-title">
+  <div class="container">
+
+    <div class="tours-head">
+      <div>
+        <div class="tag">✦ Hot Deals</div>
+        <h2 id="tours-title" class="section-title">Popular Tour Packages</h2>
+        <div class="filter-chips" role="group" aria-label="Filter by destination">
+          <button class="fchip active" data-filter="all">All</button>
+          <button class="fchip" data-filter="maldives">🇲🇻 Maldives</button>
+          <button class="fchip" data-filter="thailand">🇹🇭 Thailand</button>
+          <button class="fchip" data-filter="dubai">🇦🇪 Dubai</button>
+          <button class="fchip" data-filter="malaysia">🇲🇾 Malaysia</button>
+          <button class="fchip" data-filter="singapore">🇸🇬 Singapore</button>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn-primary">View All Packages</a>
+    </div>
+
+    <div class="tours-grid">
+
+      <!-- Card 1: Maldives Luxury -->
+      <article class="tc anim" data-dest="maldives">
+        <div class="tc-img">
+          <img src="./images/maldivs.jpg" alt="Maldives Overwater Bungalow" width="400" height="240" loading="lazy">
+          <span class="tc-badge hot">🔥 Hot Deal</span>
+          <span class="tc-rating">⭐ 4.9</span>
+        </div>
+        <div class="tc-body">
+          <div class="tc-dest">Maldives</div>
+          <h3 class="tc-title">Maldives Luxury Escape — 5 Nights</h3>
+          <div class="tc-meta">
+            <span>⏱️ 5N/6D</span>
+            <span>🍽️ Full Board</span>
+            <span>✈️ Flights Incl.</span>
+          </div>
+          <div class="tc-footer">
+            <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20the%20Maldives%20Luxury%20Escape%20package" target="_blank" rel="noopener" class="tc-book">Book Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2: Thailand -->
+      <article class="tc anim" data-dest="thailand" style="transition-delay:.08s">
+        <div class="tc-img">
+          <img src="./images/Thailand.jpg" alt="Bangkok Thailand Temple" width="400" height="240" loading="lazy">
+          <span class="tc-badge">Popular</span>
+          <span class="tc-rating">⭐ 4.8</span>
+        </div>
+        <div class="tc-body">
+          <div class="tc-dest">Thailand</div>
+          <h3 class="tc-title">Bangkok &amp; Pattaya Adventure — 6 Nights</h3>
+          <div class="tc-meta">
+            <span>⏱️ 6N/7D</span>
+            <span>🍽️ Breakfast</span>
+            <span>✈️ Flights Incl.</span>
+          </div>
+          <div class="tc-footer">
+            <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20the%20Thailand%20package" target="_blank" rel="noopener" class="tc-book">Book Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3: Dubai Glam -->
+      <article class="tc anim" data-dest="dubai" style="transition-delay:.16s">
+        <div class="tc-img">
+          <img src="./images/Dubai.jpg" alt="Dubai Skyline" width="400" height="240" loading="lazy">
+          <span class="tc-badge hot">🔥 Hot Deal</span>
+          <span class="tc-rating">⭐ 4.9</span>
+        </div>
+        <div class="tc-body">
+          <div class="tc-dest">Dubai</div>
+          <h3 class="tc-title">Dubai Glam Tour — 5 Nights</h3>
+          <div class="tc-meta">
+            <span>⏱️ 5N/6D</span>
+            <span>🍽️ Breakfast</span>
+            <span>✈️ Flights Incl.</span>
+          </div>
+          <div class="tc-footer">
+            <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20the%20Dubai%20Glam%20Tour" target="_blank" rel="noopener" class="tc-book">Book Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4: Malaysia -->
+      <article class="tc anim" data-dest="malaysia" style="transition-delay:.04s">
+        <div class="tc-img">
+          <img src="./images/Kuala-lumpur.jpg" alt="Kuala Lumpur Skyline" width="400" height="240" loading="lazy">
+          <span class="tc-badge">Popular</span>
+          <span class="tc-rating">⭐ 4.7</span>
+        </div>
+        <div class="tc-body">
+          <div class="tc-dest">Malaysia</div>
+          <h3 class="tc-title">Kuala Lumpur Explorer — 4 Nights</h3>
+          <div class="tc-meta">
+            <span>⏱️ 4N/5D</span>
+            <span>🍽️ Breakfast</span>
+            <span>✈️ Flights Incl.</span>
+          </div>
+          <div class="tc-footer">
+            <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20the%20Malaysia%20package" target="_blank" rel="noopener" class="tc-book">Book Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5: Singapore -->
+      <article class="tc anim" data-dest="singapore" style="transition-delay:.12s">
+        <div class="tc-img">
+          <img src="./images/Singapore.jpg" alt="Singapore Gardens by the Bay" width="400" height="240" loading="lazy">
+          <span class="tc-badge new">New</span>
+          <span class="tc-rating">⭐ 4.8</span>
+        </div>
+        <div class="tc-body">
+          <div class="tc-dest">Singapore</div>
+          <h3 class="tc-title">Singapore City Experience — 4 Nights</h3>
+          <div class="tc-meta">
+            <span>⏱️ 4N/5D</span>
+            <span>🍽️ Breakfast</span>
+            <span>✈️ Flights Incl.</span>
+          </div>
+          <div class="tc-footer">
+            <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20the%20Singapore%20package" target="_blank" rel="noopener" class="tc-book">Book Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 8: Maldives Honeymoon -->
+      <article class="tc anim" data-dest="maldives" style="transition-delay:.16s">
+        <div class="tc-img">
+          <img src="./images/maldivs.jpg" alt="Maldives Honeymoon Beach" width="400" height="240" loading="lazy">
+          <span class="tc-badge">Honeymoon</span>
+          <span class="tc-rating">⭐ 5.0</span>
+        </div>
+        <div class="tc-body">
+          <div class="tc-dest">Maldives</div>
+          <h3 class="tc-title">Maldives Honeymoon Special — 7 Nights</h3>
+          <div class="tc-meta">
+            <span>⏱️ 7N/8D</span>
+            <span>🍽️ All Inclusive</span>
+            <span>💑 Couples</span>
+          </div>
+          <div class="tc-footer">
+            <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20the%20Maldives%20Honeymoon%20package" target="_blank" rel="noopener" class="tc-book">Book Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 9: Dubai Desert -->
+      <article class="tc anim" data-dest="dubai" style="transition-delay:.24s">
+        <div class="tc-img">
+          <img src="./images/Dubai_Desert.jpg" alt="Dubai Desert Safari" width="400" height="240" loading="lazy">
+          <span class="tc-badge">Adventure</span>
+          <span class="tc-rating">⭐ 4.8</span>
+        </div>
+        <div class="tc-body">
+          <div class="tc-dest">Dubai</div>
+          <h3 class="tc-title">Dubai Desert Safari Combo — 4 Nights</h3>
+          <div class="tc-meta">
+            <span>⏱️ 4N/5D</span>
+            <span>🍽️ Half Board</span>
+            <span>🐪 Desert Safari</span>
+          </div>
+          <div class="tc-footer">
+            <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20Dubai%20Desert%20Safari" target="_blank" rel="noopener" class="tc-book">Book Now</a>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /.tours-grid -->
+
+    <!-- No Results — outside grid to avoid layout issues -->
+    <div id="noResults">
+      <div class="nr-icon">🔍</div>
+      <h3 style="color:var(--forest);margin-bottom:8px">No tours found</h3>
+      <p>Contact us to create a custom package for your destination!</p>
+      <br>
+      <a href="#contact" class="btn btn-primary">Request Custom Package</a>
+    </div>
+
+  </div><!-- /.container -->
+</section>
+
+
+<!-- 
+     AIRLINE
+ -->
+<section id="airlines" aria-labelledby="airlines-title">
+  <div class="container">
+    <div class="airlines-head anim">
+      <div class="tag">✦ Airlines Available</div>
+      <h2 id="airlines-title" class="section-title">Top Airlines</h2>
+      <p class="section-sub">We assist travelers in exploring the best available fares and routes from Bangladesh..</p>
+    </div>
+    <div class="airlines-grid">
+      <div class="airline-card anim">
+        <div class="airline-logo al-biman">BIMAN</div>
+        <div class="airline-info"><div class="airline-name">Biman Bangladesh</div><div class="airline-route">Dhaka · International</div></div>
+      </div>
+      <div class="airline-card anim" style="transition-delay:.06s">
+        <div class="airline-logo al-emirates">EK</div>
+        <div class="airline-info"><div class="airline-name">Emirates</div><div class="airline-route">Dubai · Worldwide</div></div>
+      </div>
+      <div class="airline-card anim" style="transition-delay:.12s">
+        <div class="airline-logo al-flydubai">FZ</div>
+        <div class="airline-info"><div class="airline-name">Flydubai</div><div class="airline-route">Budget Dubai Routes</div></div>
+      </div>
+      <div class="airline-card anim" style="transition-delay:.18s">
+        <div class="airline-logo al-qatar">QR</div>
+        <div class="airline-info"><div class="airline-name">Qatar Airways</div><div class="airline-route">Doha · Global</div></div>
+      </div>
+      <div class="airline-card anim" style="transition-delay:.24s">
+        <div class="airline-logo al-saudia">SV</div>
+        <div class="airline-info"><div class="airline-name">Saudia</div><div class="airline-route">Jeddah · Riyadh</div></div>
+      </div>
+      <div class="airline-card anim" style="transition-delay:.30s">
+        <div class="airline-logo al-airasia">AK</div>
+        <div class="airline-info"><div class="airline-name">AirAsia</div><div class="airline-route">Budget Asia Routes</div></div>
+      </div>
+      <div class="airline-card anim" style="transition-delay:.36s">
+        <div class="airline-logo al-singapore">SQ</div>
+        <div class="airline-info"><div class="airline-name">Singapore Airlines</div><div class="airline-route">Singapore · Worldwide</div></div>
+      </div>
+      <div class="airline-card anim" style="transition-delay:.42s">
+        <div class="airline-logo al-thai">TG</div>
+        <div class="airline-info"><div class="airline-name">Thai Airways</div><div class="airline-route">Bangkok · Asia</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--
+     VISA SERVICES
+-->
+<!--
+     VISA SERVICES
+-->
+<section id="visa" aria-labelledby="visa-title">
+  <div class="container">
+
+    <div class="visa-head anim">
+      <div class="tag">✦ Visa Services</div>
+      <h2 class="section-title" id="visa-title">Visa Assistance &amp; Processing</h2>
+      <p class="section-sub">Select your destination and visa type to see exact documents required. We handle everything — you just travel.</p>
+    </div>
+
+    <!-- Country Tabs -->
+    <div class="visa-tabs" role="tablist">
+      <button class="visa-tab active" data-country="uae" role="tab">🇦🇪 UAE</button>
+      <button class="visa-tab" data-country="thailand" role="tab">🇹🇭 Thailand</button>
+      <button class="visa-tab" data-country="malaysia" role="tab">🇲🇾 Malaysia</button>
+      <button class="visa-tab" data-country="singapore" role="tab">🇸🇬 Singapore</button>
+      <button class="visa-tab" data-country="saudi" role="tab">🇸🇦 Saudi</button>
+      <button class="visa-tab" data-country="maldives" role="tab">🇲🇻 Maldives</button>
+      <button class="visa-tab" data-country="india" role="tab">🇮🇳 India</button>
+      <button class="visa-tab" data-country="turkey" role="tab">🇹🇷 Turkey</button>
+    </div>
+
+    <!-- Visa Panels -->
+    <div class="visa-panels">
+
+      <!-- UAE -->
+      <div class="visa-panel active" data-panel="uae">
+        <div class="visa-panel-left">
+          <div class="visa-country-header">
+            <span class="visa-flag-big">🇦🇪</span>
+            <div>
+              <h3 class="visa-country-name">United Arab Emirates</h3>
+              <p class="visa-country-sub">Dubai · Abu Dhabi · Sharjah</p>
+            </div>
+          </div>
+
+          <!-- Visa Type Selector -->
+          <div class="visa-type-selector" data-country="uae">
+            <p class="vts-label">Select Visa Type:</p>
+            <div class="vts-buttons">
+              <button class="vts-btn active" data-type="tourist30">Tourist 30 Days</button>
+              <button class="vts-btn" data-type="tourist60">Tourist 60 Days</button>
+              <button class="vts-btn" data-type="transit">Transit 96 Hours</button>
+            </div>
+          </div>
+
+          <div class="visa-stats-row">
+            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">3–5 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳4,500+</div><div class="visa-stat-lbl">Visa Fee</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">98%</div><div class="visa-stat-lbl">Approval Rate</div></div>
+          </div>
+
+          <button class="visa-apply-btn" onclick="applyVisaWA('UAE', this)">💬 Apply via WhatsApp</button>
+
+          <!-- Documents per type -->
+          <div class="visa-docs">
+            <h4 class="visa-docs-title">📋 Required Documents</h4>
+
+            <div class="vdocs" data-for="uae-tourist30">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Passport-size photo (white background)</li>
+                <li>Bank statement — last 3 months (min. ৳50,000 balance)</li>
+                <li>Confirmed return flight ticket</li>
+                <li>Hotel booking confirmation</li>
+                <li>NID copy</li>
+                <li>Employment letter or business trade license</li>
+              </ul>
+            </div>
+
+            <div class="vdocs" data-for="uae-tourist60" style="display:none">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Passport-size photo (white background)</li>
+                <li>Bank statement — last 6 months (min. ৳80,000 balance)</li>
+                <li>Confirmed return flight ticket</li>
+                <li>Hotel booking confirmation</li>
+                <li>NID copy</li>
+                <li>Employment letter or business trade license</li>
+                <li>Salary certificate (if employed)</li>
+              </ul>
+            </div>
+
+            <div class="vdocs" data-for="uae-transit" style="display:none">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Passport-size photo (white background)</li>
+                <li>Confirmed onward flight ticket</li>
+                <li>Visa of final destination country</li>
+                <li>NID copy</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /uae -->
+
+      <!-- Thailand -->
+      <div class="visa-panel" data-panel="thailand">
+        <div class="visa-panel-left">
+          <div class="visa-country-header">
+            <span class="visa-flag-big">🇹🇭</span>
+            <div>
+              <h3 class="visa-country-name">Thailand</h3>
+              <p class="visa-country-sub">Bangkok · Pattaya · Phuket · Chiang Mai</p>
+            </div>
+          </div>
+
+          <div class="visa-type-selector" data-country="thailand">
+            <p class="vts-label">Select Visa Type:</p>
+            <div class="vts-buttons">
+              <button class="vts-btn active" data-type="tourist30">Tourist 30 Days</button>
+              <button class="vts-btn" data-type="tourist60">Tourist 60 Days</button>
+              <button class="vts-btn" data-type="double">Double Entry</button>
+            </div>
+          </div>
+
+          <div class="visa-stats-row">
+            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">5–7 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳3,500+</div><div class="visa-stat-lbl">Visa Fee</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">95%</div><div class="visa-stat-lbl">Approval Rate</div></div>
+          </div>
+
+          <button class="visa-apply-btn" onclick="applyVisaWA('Thailand', this)">💬 Apply via WhatsApp</button>
+
+          <div class="visa-docs">
+            <h4 class="visa-docs-title">📋 Required Documents</h4>
+
+            <div class="vdocs" data-for="thailand-tourist30">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Passport-size photo (white background, 4×6 cm)</li>
+                <li>Bank statement — last 3 months (min. ৳30,000 balance)</li>
+                <li>Confirmed return flight ticket</li>
+                <li>Hotel booking confirmation</li>
+                <li>NID copy</li>
+                <li>Employment letter or business trade license</li>
+              </ul>
+            </div>
+
+            <div class="vdocs" data-for="thailand-tourist60" style="display:none">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Passport-size photo (white background, 4×6 cm)</li>
+                <li>Bank statement — last 6 months (min. ৳60,000 balance)</li>
+                <li>Confirmed return flight ticket</li>
+                <li>Hotel booking confirmation</li>
+                <li>NID copy</li>
+                <li>Employment letter or business trade license</li>
+                <li>Travel itinerary</li>
+              </ul>
+            </div>
+
+            <div class="vdocs" data-for="thailand-double" style="display:none">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>2 passport-size photos (white background)</li>
+                <li>Bank statement — last 6 months (min. ৳80,000 balance)</li>
+                <li>Confirmed return flight ticket</li>
+                <li>Hotel bookings for both stays</li>
+                <li>NID copy</li>
+                <li>Detailed travel itinerary</li>
+                <li>Previous Thailand visa (if any) — helps approval</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /thailand -->
+
+      <!-- Malaysia -->
+      <div class="visa-panel" data-panel="malaysia">
+        <div class="visa-panel-left">
+          <div class="visa-country-header">
+            <span class="visa-flag-big">🇲🇾</span>
+            <div>
+              <h3 class="visa-country-name">Malaysia</h3>
+              <p class="visa-country-sub">Kuala Lumpur · Langkawi · Penang</p>
+            </div>
+          </div>
+
+          <div class="visa-type-selector" data-country="malaysia">
+            <p class="vts-label">Select Visa Type:</p>
+            <div class="vts-buttons">
+              <button class="vts-btn active" data-type="evisa30">eVisa 30 Days</button>
+              <button class="vts-btn" data-type="single">Single Entry</button>
+              <button class="vts-btn" data-type="multiple">Multiple Entry</button>
+            </div>
+          </div>
+
+          <div class="visa-stats-row">
+            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">3–5 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳2,800+</div><div class="visa-stat-lbl">Visa Fee</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">97%</div><div class="visa-stat-lbl">Approval Rate</div></div>
+          </div>
+
+          <button class="visa-apply-btn" onclick="applyVisaWA('Malaysia', this)">💬 Apply via WhatsApp</button>
+
+          <div class="visa-docs">
+            <h4 class="visa-docs-title">📋 Required Documents</h4>
+
+            <div class="vdocs" data-for="malaysia-evisa30">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Digital passport photo (white background, JPEG)</li>
+                <li>Bank statement — last 3 months</li>
+                <li>Confirmed return flight ticket</li>
+                <li>Hotel booking confirmation</li>
+                <li>NID copy (scanned)</li>
+              </ul>
+            </div>
+
+            <div class="vdocs" data-for="malaysia-single" style="display:none">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Passport-size photo (white background)</li>
+                <li>Bank statement — last 3 months (min. ৳25,000)</li>
+                <li>Confirmed return flight ticket</li>
+                <li>Hotel booking confirmation</li>
+                <li>NID copy</li>
+                <li>Employment letter / salary certificate</li>
+              </ul>
+            </div>
+
+            <div class="vdocs" data-for="malaysia-multiple" style="display:none">
+              <ul>
+                <li>Valid passport (min. 12 months validity)</li>
+                <li>Passport-size photo (white background)</li>
+                <li>Bank statement — last 6 months (min. ৳1,00,000)</li>
+                <li>Confirmed flight tickets</li>
+                <li>Previous Malaysia visa (if available)</li>
+                <li>NID copy</li>
+                <li>Employment letter with salary details</li>
+                <li>Business trade license (if self-employed)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /malaysia -->
+
+      <!-- Singapore -->
+      <div class="visa-panel" data-panel="singapore">
+        <div class="visa-panel-left">
+          <div class="visa-country-header">
+            <span class="visa-flag-big">🇸🇬</span>
+            <div>
+              <h3 class="visa-country-name">Singapore</h3>
+              <p class="visa-country-sub">Marina Bay · Sentosa · Orchard Road</p>
+            </div>
+          </div>
+
+          <div class="visa-type-selector" data-country="singapore">
+            <p class="vts-label">Select Visa Type:</p>
+            <div class="vts-buttons">
+              <button class="vts-btn active" data-type="tourist30">Tourist 30 Days</button>
+              <button class="vts-btn" data-type="multiple">Multiple Entry</button>
+            </div>
+          </div>
+
+          <div class="visa-stats-row">
+            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">7–10 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳5,500+</div><div class="visa-stat-lbl">Visa Fee</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">90%</div><div class="visa-stat-lbl">Approval Rate</div></div>
+          </div>
+
+          <button class="visa-apply-btn" onclick="applyVisaWA('Singapore', this)">💬 Apply via WhatsApp</button>
+
+          <div class="visa-docs">
+            <h4 class="visa-docs-title">📋 Required Documents</h4>
+
+            <div class="vdocs" data-for="singapore-tourist30">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Passport-size photo (white background, 35×45 mm)</li>
+                <li>Bank statement — last 3 months (min. ৳50,000)</li>
+                <li>Confirmed return flight ticket</li>
+                <li>Hotel booking confirmation</li>
+                <li>NID copy</li>
+                <li>Employment letter or business certificate</li>
+                <li>Last 3 months salary slip</li>
+              </ul>
+            </div>
+
+            <div class="vdocs" data-for="singapore-multiple" style="display:none">
+              <ul>
+                <li>Valid passport (min. 12 months validity)</li>
+                <li>Passport-size photo (white background, 35×45 mm)</li>
+                <li>Bank statement — last 6 months (min. ৳1,50,000)</li>
+                <li>Confirmed flight tickets</li>
+                <li>Previous Singapore visa copy</li>
+                <li>NID copy</li>
+                <li>Employment letter with designation &amp; salary</li>
+                <li>Last 6 months salary slips</li>
+                <li>Income Tax Return (if available)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /singapore -->
+
+      <!-- Saudi -->
+      <div class="visa-panel" data-panel="saudi">
+        <div class="visa-panel-left">
+          <div class="visa-country-header">
+            <span class="visa-flag-big">🇸🇦</span>
+            <div>
+              <h3 class="visa-country-name">Saudi Arabia</h3>
+              <p class="visa-country-sub">Makkah · Madinah · Riyadh · Jeddah</p>
+            </div>
+          </div>
+
+          <div class="visa-type-selector" data-country="saudi">
+            <p class="vts-label">Select Visa Type:</p>
+            <div class="vts-buttons">
+              <button class="vts-btn active" data-type="umrah">Umrah Visa</button>
+              <button class="vts-btn" data-type="tourist">Tourist Visa</button>
+              <button class="vts-btn" data-type="work">Work Visa</button>
+            </div>
+          </div>
+
+          <div class="visa-stats-row">
+            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">5–10 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳6,000+</div><div class="visa-stat-lbl">Visa Fee</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">96%</div><div class="visa-stat-lbl">Approval Rate</div></div>
+          </div>
+
+          <button class="visa-apply-btn" onclick="applyVisaWA('Saudi Arabia', this)">💬 Apply via WhatsApp</button>
+
+          <div class="visa-docs">
+            <h4 class="visa-docs-title">📋 Required Documents</h4>
+
+            <div class="vdocs" data-for="saudi-umrah">
+              <ul>
+                <li>Valid passport (min. 6 months validity, at least 2 blank pages)</li>
+                <li>Passport-size photo (white background)</li>
+                <li>NID copy</li>
+                <li>Mahram document (for females without husband)</li>
+                <li>Meningitis vaccination certificate</li>
+                <li>Confirmed flight ticket to Jeddah/Madinah</li>
+                <li>Hotel booking near Haram</li>
+                <li>Travel agency authorization letter</li>
+              </ul>
+            </div>
+
+            <div class="vdocs" data-for="saudi-tourist" style="display:none">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Passport-size photo (white background)</li>
+                <li>Bank statement — last 3 months</li>
+                <li>Confirmed return flight ticket</li>
+                <li>Hotel booking confirmation</li>
+                <li>NID copy</li>
+                <li>Travel itinerary</li>
+              </ul>
+            </div>
+
+            <div class="vdocs" data-for="saudi-work" style="display:none">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Passport-size photo (white background)</li>
+                <li>Iqama / work permit from Saudi employer</li>
+                <li>Employment contract (Arabic + English)</li>
+                <li>Medical fitness certificate</li>
+                <li>Police clearance certificate</li>
+                <li>Educational certificates (attested)</li>
+                <li>NID copy</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /saudi -->
+
+      <!-- Maldives -->
+      <div class="visa-panel" data-panel="maldives">
+        <div class="visa-panel-left">
+          <div class="visa-country-header">
+            <span class="visa-flag-big">🇲🇻</span>
+            <div>
+              <h3 class="visa-country-name">Maldives</h3>
+              <p class="visa-country-sub">Malé · Maafushi · Baa Atoll</p>
+            </div>
+          </div>
+
+          <div class="visa-type-selector" data-country="maldives">
+            <p class="vts-label">Select Visa Type:</p>
+            <div class="vts-buttons">
+              <button class="vts-btn active" data-type="onarrival">On Arrival 30 Days</button>
+            </div>
+          </div>
+
+          <div class="visa-stats-row">
+            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">On Arrival</div><div class="visa-stat-lbl">Processing Time</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">Free</div><div class="visa-stat-lbl">Visa Fee</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">100%</div><div class="visa-stat-lbl">Approval Rate</div></div>
+          </div>
+
+          <button class="visa-apply-btn" onclick="applyVisaWA('Maldives', this)">💬 Apply via WhatsApp</button>
+
+          <div class="visa-docs">
+            <h4 class="visa-docs-title">📋 Required Documents</h4>
+            <div class="vdocs" data-for="maldives-onarrival">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Confirmed return flight ticket</li>
+                <li>Hotel / resort booking confirmation</li>
+                <li>Proof of sufficient funds (bank card or cash)</li>
+                <li>Filled immigration arrival card</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /maldives -->
+
+      <!-- India -->
+      <div class="visa-panel" data-panel="india">
+        <div class="visa-panel-left">
+          <div class="visa-country-header">
+            <span class="visa-flag-big">🇮🇳</span>
+            <div>
+              <h3 class="visa-country-name">India</h3>
+              <p class="visa-country-sub">Delhi · Mumbai · Kolkata · Chennai</p>
+            </div>
+          </div>
+
+          <div class="visa-type-selector" data-country="india">
+            <p class="vts-label">Select Visa Type:</p>
+            <div class="vts-buttons">
+              <button class="vts-btn active" data-type="tourist">Tourist eVisa</button>
+              <button class="vts-btn" data-type="medical">Medical Visa</button>
+              <button class="vts-btn" data-type="business">Business Visa</button>
+            </div>
+          </div>
+
+          <div class="visa-stats-row">
+            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">3–5 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳2,500+</div><div class="visa-stat-lbl">Visa Fee</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">94%</div><div class="visa-stat-lbl">Approval Rate</div></div>
+          </div>
+
+          <button class="visa-apply-btn" onclick="applyVisaWA('India', this)">💬 Apply via WhatsApp</button>
+
+          <div class="visa-docs">
+            <h4 class="visa-docs-title">📋 Required Documents</h4>
+
+            <div class="vdocs" data-for="india-tourist">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Digital photo (white background, JPEG, min. 10KB)</li>
+                <li>Bank statement — last 3 months</li>
+                <li>Confirmed return flight ticket</li>
+                <li>Hotel booking confirmation</li>
+                <li>NID copy</li>
+              </ul>
+            </div>
+
+            <div class="vdocs" data-for="india-medical" style="display:none">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Digital photo (white background, JPEG)</li>
+                <li>Doctor referral letter from Bangladesh</li>
+                <li>Hospital appointment letter from India</li>
+                <li>Bank statement showing treatment funds</li>
+                <li>NID copy</li>
+                <li>Attendant's documents (if applicable)</li>
+              </ul>
+            </div>
+
+            <div class="vdocs" data-for="india-business" style="display:none">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Digital photo (white background, JPEG)</li>
+                <li>Business invitation letter from Indian company</li>
+                <li>Bank statement — last 6 months</li>
+                <li>Company trade license (Bangladesh)</li>
+                <li>NID copy</li>
+                <li>Business card</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /india -->
+
+      <!-- Turkey -->
+      <div class="visa-panel" data-panel="turkey">
+        <div class="visa-panel-left">
+          <div class="visa-country-header">
+            <span class="visa-flag-big">🇹🇷</span>
+            <div>
+              <h3 class="visa-country-name">Turkey</h3>
+              <p class="visa-country-sub">Istanbul · Ankara · Cappadocia · Antalya</p>
+            </div>
+          </div>
+
+          <div class="visa-type-selector" data-country="turkey">
+            <p class="vts-label">Select Visa Type:</p>
+            <div class="vts-buttons">
+              <button class="vts-btn active" data-type="tourist30">Tourist eVisa 30 Days</button>
+              <button class="vts-btn" data-type="multiple">Multiple Entry</button>
+            </div>
+          </div>
+
+          <div class="visa-stats-row">
+            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">3–7 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳4,000+</div><div class="visa-stat-lbl">Visa Fee</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">93%</div><div class="visa-stat-lbl">Approval Rate</div></div>
+          </div>
+
+          <button class="visa-apply-btn" onclick="applyVisaWA('Turkey', this)">💬 Apply via WhatsApp</button>
+
+          <div class="visa-docs">
+            <h4 class="visa-docs-title">📋 Required Documents</h4>
+
+            <div class="vdocs" data-for="turkey-tourist30">
+              <ul>
+                <li>Valid passport (min. 6 months validity)</li>
+                <li>Passport-size photo (white background)</li>
+                <li>Bank statement — last 3 months (min. ৳40,000)</li>
+                <li>Confirmed return flight ticket</li>
+                <li>Hotel booking confirmation</li>
+                <li>NID copy</li>
+                <li>Employment letter or business certificate</li>
+              </ul>
+            </div>
+
+            <div class="vdocs" data-for="turkey-multiple" style="display:none">
+              <ul>
+                <li>Valid passport (min. 12 months validity)</li>
+                <li>Passport-size photo (white background)</li>
+                <li>Bank statement — last 6 months (min. ৳1,00,000)</li>
+                <li>Confirmed flight tickets</li>
+                <li>Previous Turkey visa or Schengen/US visa (helps approval)</li>
+                <li>NID copy</li>
+                <li>Employment letter with salary details</li>
+                <li>Travel itinerary</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /turkey -->
+
+    </div><!-- /.visa-panels -->
+  </div><!-- /.container -->
+</section>
+
+<!-- 
+     STATS
+ -->
+<section id="stats" aria-label="Our achievements">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item anim">
+        <div class="stat-icon">✈️</div>
+        <span class="count" data-to="1250">0+</span>
+        <div class="stat-label">Happy Travelers</div>
+      </div>
+      <div class="stat-item anim" style="transition-delay:.1s">
+        <div class="stat-icon">🌍</div>
+        <span class="count" data-to="45">0+</span>
+        <div class="stat-label">Destinations Covered</div>
+      </div>
+      <div class="stat-item anim" style="transition-delay:.2s">
+        <div class="stat-icon">📦</div>
+        <span class="count" data-to="30">0+</span>
+        <div class="stat-label">Tour Packages</div>
+      </div>
+      <div class="stat-item anim" style="transition-delay:.3s">
+        <div class="stat-icon">🏆</div>
+        <span class="count" data-to="5">0+</span>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 
+     TESTIMONIALS
+ -->
+<section id="testimonials" class="section-pad" aria-labelledby="testi-title">
+  <div class="container">
+    <div class="testi-head">
+      <div>
+        <div class="tag">✦ Client Stories</div>
+        <h2 id="testi-title" class="section-title">What Our Travelers Say</h2>
+      </div>
+      <div class="testi-nav" aria-label="Testimonial navigation">
+        <button class="tnav-btn" id="tPrev" aria-label="Previous testimonial">&#8592;</button>
+        <button class="tnav-btn" id="tNext" aria-label="Next testimonial">&#8594;</button>
+      </div>
+    </div>
+    <div class="testi-wrap" aria-live="polite">
+      <div id="testiTrack">
+
+        <div class="tcard anim">
+          <div class="tcard-stars"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+          <p class="tcard-text">"Travel Dunia made our Maldives honeymoon absolutely magical! Every detail was perfectly arranged — from the overwater bungalow to the airport transfers. We couldn't have asked for more."</p>
+          <div class="tcard-author">
+           
+            <div><div class="tcard-name">Nadia &amp; Rafiq</div><div class="tcard-dest">Maldives Honeymoon</div></div>
+          </div>
+        </div>
+
+        <div class="tcard anim" style="transition-delay:.08s">
+          <div class="tcard-stars"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+          <p class="tcard-text">"I've used many travel agencies but Travel Dunia stands apart. Their Dubai package was incredible value — 5 nights with breakfast and desert safari included. Highly recommended!"</p>
+          <div class="tcard-author">
+            <div><div class="tcard-name">Karim Ahmed</div><div class="tcard-dest">Dubai Explorer</div></div>
+          </div>
+        </div>
+
+        <div class="tcard anim" style="transition-delay:.16s">
+          <div class="tcard-stars"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+          <p class="tcard-text">"Excellent service from start to finish! The Thailand package was perfect. Visa processing was smooth, accommodation was top-notch, and the itinerary was wonderfully planned."</p>
+          <div class="tcard-author">
+            <div><div class="tcard-name">Fatima Begum</div><div class="tcard-dest">Thailand Family Trip</div></div>
+          </div>
+        </div>
+
+        <div class="tcard anim" style="transition-delay:.24s">
+          <div class="tcard-stars"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+          <p class="tcard-text">"Performed Umrah with Travel Dunia's package and it was a truly blessed and hassle-free experience. All arrangements were handled professionally. JazakAllah Khair!"</p>
+          <div class="tcard-author">
+            <div><div class="tcard-name">Hasan Mahmud</div><div class="tcard-dest">Umrah Package</div></div>
+          </div>
+        </div>
+
+        <div class="tcard anim" style="transition-delay:.32s">
+          <div class="tcard-stars"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+          <p class="tcard-text">"Booked our Malaysia &amp; Singapore combo through Travel Dunia. The price was unbeatable and the service was fantastic. Will definitely book again for our Europe trip!"</p>
+          <div class="tcard-author">
+            <div><div class="tcard-name">Sabrina &amp; Family</div><div class="tcard-dest">Malaysia + Singapore</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 
+     CONTACT / BOOK NOW
+ -->
+<section id="contact" class="section-pad" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: Info -->
+      <div class="anim">
+        <div class="tag">✦ Get In Touch</div>
+        <h2 id="contact-title">Book Your Dream<br>Trip Today</h2>
+        <p>Ready to explore? Fill in the form or contact us directly on WhatsApp. Our travel experts are available 24/7 to help plan your perfect journey.</p>
+
+        <div class="contact-items">
+          <div class="ci">
+            <div class="ci-icon">📱</div>
+            <div>
+              <div class="ci-lbl">WhatsApp / Phone</div>
+              <div class="ci-val">017-3713-8585 / 018-7807-2988</div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">📧</div>
+            <div>
+              <div class="ci-val">traveldunia.bd@gmail.com</div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-lbl">Office</div>
+              <div class="ci-val">Travel Dunia <br>
+              House# 16 (1st Floor), Road 4, Block F, Banani, Dhaka- 1213</div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">🕐</div>
+            <div>
+              <div class="ci-lbl">Working Hours</div>
+              <div class="ci-val">Sat–Thu: 9am – 9pm</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-row">
+          <a href="https://www.facebook.com/TravelDunia.WithUS" target="_blank" rel="noopener" class="soc-link" title="Facebook">📘</a>
+          <a href="https://wa.me/8801878072988" target="_blank" rel="noopener" class="soc-link" title="WhatsApp">💬</a>
+          <a href="tel:+8801878072988" class="soc-link" title="Call">📞</a>
+          <a href="mailto:info@traveldunia.com.bd" class="soc-link" title="Email">📧</a>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form anim" style="transition-delay:.15s">
+        <h3>Send Us a Message</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Full Name *</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-phone">WhatsApp Number *</label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="+880 XXXX-XXXXXX" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-email">Email Address</label>
+              <input type="email" id="cf-email" name="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="cf-dest">Destination</label>
+              <select id="cf-dest" name="destination">
+                <option value="">Select destination</option>
+                <option>Maldives</option>
+                <option>Thailand</option>
+                <option>Dubai</option>
+                <option>Malaysia</option>
+                <option>Singapore</option>
+                <option>Cox's Bazar</option>
+                <option>Sundarban</option>
+                <option>Umrah / Hajj</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-date">Travel Date</label>
+            <input type="date" id="cf-date" name="date">
+          </div>
+          <div class="form-group">
+            <label for="cf-msg">Message / Special Requests</label>
+            <textarea id="cf-msg" name="message" rows="3" placeholder="Tell us about your dream trip, budget, number of travelers..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">💬 Send via WhatsApp</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- 
+     FAQ
+ -->
+<section id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="faq-inner">
+      <div class="tag">✦ FAQ</div>
+      <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Have questions? We have answers. For anything else, just WhatsApp us!</p>
+
+      <div class="faq-list">
+
+        <div class="faq-item anim">
+          <div class="faq-q">How do I book a tour package with Travel Dunia? <span class="fqi">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Simply fill out our contact form, click any "Book Now" button, or message us directly on WhatsApp. Our team responds within 30 minutes with the best available options for your trip.</div></div>
+        </div>
+
+        <div class="faq-item anim" style="transition-delay:.06s">
+          <div class="faq-q">Do you provide visa processing services? <span class="fqi">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Yes! We offer complete visa assistance for 100+ countries including UAE, Thailand, Malaysia, Singapore, Schengen, USA, UK, and more. Our experienced team ensures maximum approval rates with proper document guidance.</div></div>
+        </div>
+
+        <div class="faq-item anim" style="transition-delay:.12s">
+          <div class="faq-q">Can I customize a tour package to my budget? <span class="fqi">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Absolutely! All packages can be fully customized based on budget, travel dates, number of travelers, accommodation preferences, and activities. We specialize in personalized itineraries for every type of traveler.</div></div>
+        </div>
+
+        <div class="faq-item anim" style="transition-delay:.18s">
+          <div class="faq-q">Do you offer Umrah and Hajj packages? <span class="fqi">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Yes, we offer comprehensive Umrah and Hajj packages at competitive prices, including flights, accommodation near Haram, transportation, and guided support throughout your blessed journey. Contact us for current pricing.</div></div>
+        </div>
+
+        <div class="faq-item anim" style="transition-delay:.24s">
+          <div class="faq-q">What payment methods do you accept? <span class="fqi">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">We accept bank transfer, bKash, Nagad, Rocket, and cash at our office. A 30% advance is required to confirm your booking, with the balance due before departure.</div></div>
+        </div>
+
+        <div class="faq-item anim" style="transition-delay:.30s">
+          <div class="faq-q">What is your cancellation and refund policy? <span class="fqi">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Cancellations 30+ days before departure receive a full refund minus processing fees. 15–29 days: 50% refund. Within 14 days: generally non-refundable unless special circumstances apply. We always accommodate genuine emergencies with care.</div></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 
+     FOOTER
+ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Travel Dunia Logo" width="48" height="48">
+        <p>Travel Dunia is Bangladesh's trusted travel partner offering premium tour packages, airline tickets, visa assistance, and complete travel solutions for over a decade.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/TravelDunia.WithUS" target="_blank" rel="noopener" class="soc-link" title="Facebook">📘</a>
+          <a href="https://wa.me/8801878072988" target="_blank" rel="noopener" class="soc-link" title="WhatsApp">💬</a>
+          <a href="tel:+8801878072988" class="soc-link" title="Call">📞</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#hero">Home</a>
+        <a href="#why">About Us</a>
+        <a href="#tours">Tour Packages</a>
+        <a href="#airlines">Airlines</a>
+        <a href="#contact">Book Now</a>
+      </div>
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <a href="#tours">Maldives</a>
+        <a href="#tours">Thailand</a>
+        <a href="#tours">Dubai</a>
+        <a href="#tours">Malaysia</a>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#contact">Tour Packages</a>
+        <a href="#contact">Air Ticketing</a>
+        <a href="#contact">Visa Processing</a>
+        <a href="#contact">Hotel Booking</a>
+        <a href="#contact">Umrah</a>
+        <a href="#contact">Group Tours</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; <script>document.write(new Date().getFullYear())</script> Travel Dunia. All rights reserved. Made with ❤️ in Bangladesh.</div>
+      <div class="footer-bottom-links">
+        <a href="#contact">Privacy Policy</a>
+        <a href="#contact">Terms of Service</a>
+        <a href="#contact">Refund Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!--
+     STICKY  BUTTON
+ -->
+<!-- Floating Contact Stack -->
+<div id="float-stack">
+
+  <a href="tel:+8801878072988" class="float-phone" aria-label="Hotline">
+    <span class="float-phone-icon">📞</span>
+    <span class="float-phone-info">
+      <span class="float-phone-label">Hotline</span>
+      <span class="float-phone-num">+880 1878-072988</span>
+    </span>
+  </a>
+
+    <a href="tel:+8801305726170" class="float-phone" aria-label="Reservation">
+    <span class="float-phone-icon">📋</span>
+    <span class="float-phone-info">
+      <span class="float-phone-label">Reservation</span>
+      <span class="float-phone-num">+880 1305-726170</span>
+    </span>
+  </a>
+
+
+  <a href="tel:+8801737138585" class="float-phone" aria-label="Support">
+    <span class="float-phone-icon">🎧</span>
+    <span class="float-phone-info">
+      <span class="float-phone-label">Support</span>
+      <span class="float-phone-num">+880 1737-138585</span>
+    </span>
+  </a>
+
+
+
+  <a id="fb-btn"
+     href="https://www.facebook.com/TravelDunia.WithUS"
+     target="_blank" rel="noopener"
+     aria-label="Visit Facebook">
+    <span class="wa-tip">Visit Facebook</span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.691V11.01h3.13V8.309c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.696h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+    </svg>
+  </a>
+
+  <a id="wa-btn"
+     href="https://wa.me/8801878072988?text=Hello%20Travel%20Dunia!%20I%20want%20to%20inquire%20about%20a%20tour%20package."
+     target="_blank" rel="noopener"
+     aria-label="Chat on WhatsApp">
+    <span class="wa-tip">Chat on WhatsApp</span>
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.475 2.024 7.782L0 32l8.464-2.003A15.934 15.934 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.767-1.852l-.485-.288-5.024 1.188 1.226-4.897-.316-.502A13.254 13.254 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.288-9.89c-.4-.2-2.363-1.165-2.729-1.298-.366-.133-.632-.2-.899.2-.266.4-1.032 1.298-1.265 1.565-.233.266-.466.3-.866.1-.4-.2-1.689-.623-3.217-1.985-1.189-1.06-1.99-2.37-2.224-2.77-.233-.4-.025-.616.175-.815.18-.178.4-.466.6-.699.2-.233.266-.4.4-.666.133-.266.066-.5-.033-.7-.1-.2-.899-2.166-1.232-2.965-.325-.78-.655-.673-.899-.687-.233-.013-.5-.016-.765-.016-.267 0-.7.1-1.066.5-.366.4-1.4 1.365-1.4 3.33s1.433 3.863 1.633 4.13c.2.266 2.817 4.302 6.826 6.034.953.411 1.697.657 2.277.841.956.304 1.827.261 2.516.158.767-.115 2.363-.966 2.696-1.899.333-.933.333-1.733.233-1.899-.1-.165-.366-.265-.766-.465z"/>
+    </svg>
+  </a>
+
+</div>
+
+
+<!-- Mobile Bottom Bar -->
+<div class="mob-bar" id="mobBar">
+  <a href="tel:+8801878072988" class="mb-btn">
+    <span class="mb-label">Hotline</span>
+    <span class="mb-num">01878-072988</span>
+  </a>
+  <a href="tel:+8801305726170" class="mb-btn">
+    <span class="mb-label">Reservation</span>
+    <span class="mb-num">01305-726170</span>
+  </a>
+  <a href="tel:+8801737138585" class="mb-btn">
+    <span class="mb-label">Support</span>
+    <span class="mb-num">01737-138585</span>
+  </a>
+</div>
+<!-- Scroll to top -->
+<button id="stt" aria-label="Scroll to top" title="Back to top">↑</button>
+
+<!-- Toast notification -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- ════ SCRIPTS ════ -->
+<script src="main.js"></script>
+
+</body>
+</html>
