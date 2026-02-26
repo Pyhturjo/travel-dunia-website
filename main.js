@@ -439,3 +439,12 @@ function applyVisaWA(country, btn) {
   var url = 'https://wa.me/8801878072988?text=' + encodeURIComponent(lines.join('\n'));
   window.open(url, '_blank');
 }
+
+
+/* ── Video sound toggle ── */
+function toggleSound() {
+  var video = document.getElementById('tdVideo');
+  var btn = document.getElementById('soundBtn');
+  video.muted = !video.muted;
+  btn.textContent = video.muted ? '🔇' : '🔊';
+}

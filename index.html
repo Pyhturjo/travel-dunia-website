@@ -36,6 +36,7 @@
         <a href="#hero">Home</a>
         <a href="#why">About</a>
         <a href="#tours">Tours</a>
+        <a href="#domestic">Domestic</a>
         <a href="#airlines">Airlines</a>
         <a href="#visa">Visa</a>
         <a href="#testimonials">Reviews</a>
@@ -110,6 +111,7 @@
             <option value="dubai">🇦🇪 Dubai</option>
             <option value="malaysia">🇲🇾 Malaysia</option>
             <option value="singapore">🇸🇬 Singapore</option>
+            <option value="india">🇮🇳 India</option>
           </select>
         </div>
         <div class="search-field">
@@ -140,6 +142,19 @@
   </div>
 
 </section><!-- /#hero -->
+
+<!-- VIDEO BANNER -->
+<!-- VIDEO BANNER -->
+<section id="video-banner">
+  <video id="tdVideo" autoplay muted loop playsinline poster="./images/hero1.jpg">
+    <source src="./images/TD Video.mp4" type="video/mp4">
+  </video>
+  <div class="vb-overlay">
+    <h2>See the World Through Our Eyes</h2>
+    <a href="#contact" class="btn btn-primary">Book Your Trip</a>
+  </div>
+  <button class="vb-sound" id="soundBtn" onclick="toggleSound()">🔇</button>
+</section>
 
 
 <!--
@@ -222,6 +237,7 @@
           <button class="fchip" data-filter="dubai">🇦🇪 Dubai</button>
           <button class="fchip" data-filter="malaysia">🇲🇾 Malaysia</button>
           <button class="fchip" data-filter="singapore">🇸🇬 Singapore</button>
+          <button class="fchip" data-filter="india">🇮🇳 India</button>
         </div>
       </div>
       <a href="#contact" class="btn btn-primary">View All Packages</a>
@@ -376,7 +392,123 @@
         </div>
       </article>
 
+
+            <!-- India Cards -->
+<article class="tc anim" data-dest="india">
+  <div class="tc-img">
+    <img src="./images/Kashmir.webp" alt="Kashmir Tour" width="400" height="240" loading="lazy">
+    <span class="tc-badge hot">🔥 Hot Deal</span>
+    <span class="tc-rating">⭐ 4.9</span>
+  </div>
+  <div class="tc-body">
+    <div class="tc-dest">India</div>
+    <h3 class="tc-title">Kashmir — Start Your Journey</h3>
+    <div class="tc-meta"><span>✈️ Flights Incl.</span><span>🏔️ Mountains</span></div>
+    <div class="tc-footer">
+      <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20the%20Kashmir%20tour%20package.%20Please%20share%20details." target="_blank" rel="noopener" class="tc-book">Book Now</a>
+    </div>
+  </div>
+</article>
+
+<article class="tc anim" data-dest="india">
+  <div class="tc-img">
+    <img src="./images/ladakh.webp" alt="Ladakh Tour" width="400" height="240" loading="lazy">
+    <span class="tc-badge">Popular</span>
+    <span class="tc-rating">⭐ 4.8</span>
+  </div>
+  <div class="tc-body">
+    <div class="tc-dest">India</div>
+    <h3 class="tc-title">Ladakh — Himalayan Adventure</h3>
+    <div class="tc-meta"><span>✈️ Flights Incl.</span><span>🏔️ High Altitude</span></div>
+    <div class="tc-footer">
+      <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20the%20Ladakh%20tour%20package.%20Please%20share%20details." target="_blank" rel="noopener" class="tc-book">Book Now</a>
+    </div>
+  </div>
+</article>
+
+<article class="tc anim" data-dest="india">
+  <div class="tc-img">
+    <img src="./images/goa.webp" alt="Goa Tour" width="400" height="240" loading="lazy">
+    <span class="tc-badge">Popular</span>
+    <span class="tc-rating">⭐ 4.8</span>
+  </div>
+  <div class="tc-body">
+    <div class="tc-dest">India</div>
+    <h3 class="tc-title">Goa — Beach Paradise</h3>
+    <div class="tc-meta"><span>✈️ Flights Incl.</span><span>🏖️ Beach</span></div>
+    <div class="tc-footer">
+      <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20the%20Goa%20tour%20package.%20Please%20share%20details." target="_blank" rel="noopener" class="tc-book">Book Now</a>
+    </div>
+  </div>
+</article>
+
+<article class="tc anim" data-dest="india">
+  <div class="tc-img">
+    <img src="./images/sikkim.webp" alt="Sikkim Tour" width="400" height="240" loading="lazy">
+    <span class="tc-badge new">New</span>
+    <span class="tc-rating">⭐ 4.7</span>
+  </div>
+  <div class="tc-body">
+    <div class="tc-dest">India</div>
+    <h3 class="tc-title">Sikkim — Himalayan Kingdom</h3>
+    <div class="tc-meta"><span>✈️ Flights Incl.</span><span>🌄 Scenic</span></div>
+    <div class="tc-footer">
+      <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20the%20Sikkim%20tour%20package.%20Please%20share%20details." target="_blank" rel="noopener" class="tc-book">Book Now</a>
+    </div>
+  </div>
+</article>
+
+<article class="tc anim" data-dest="india">
+  <div class="tc-img">
+    <img src="./images/raj.webp" alt="Rajasthan Tour" width="400" height="240" loading="lazy">
+    <span class="tc-badge">Popular</span>
+    <span class="tc-rating">⭐ 4.8</span>
+  </div>
+  <div class="tc-body">
+    <div class="tc-dest">India</div>
+    <h3 class="tc-title">Rajasthan — Royal Heritage</h3>
+    <div class="tc-meta"><span>✈️ Flights Incl.</span><span>🏰 Heritage</span></div>
+    <div class="tc-footer">
+      <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20the%20Rajasthan%20tour%20package.%20Please%20share%20details." target="_blank" rel="noopener" class="tc-book">Book Now</a>
+    </div>
+  </div>
+</article>
+
+<article class="tc anim" data-dest="india">
+  <div class="tc-img">
+    <img src="./images/himac.webp" alt="Himachal Pradesh Tour" width="400" height="240" loading="lazy">
+    <span class="tc-badge hot">🔥 Hot Deal</span>
+    <span class="tc-rating">⭐ 4.9</span>
+  </div>
+  <div class="tc-body">
+    <div class="tc-dest">India</div>
+    <h3 class="tc-title">Himachal Pradesh — Valley of Gods</h3>
+    <div class="tc-meta"><span>✈️ Flights Incl.</span><span>❄️ Snow</span></div>
+    <div class="tc-footer">
+      <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20Himachal%20Pradesh%20tour%20package.%20Please%20share%20details." target="_blank" rel="noopener" class="tc-book">Book Now</a>
+    </div>
+  </div>
+</article>
+
+<article class="tc anim" data-dest="india">
+  <div class="tc-img">
+    <img src="./images/kerala.webp" alt="Kerala Tour" width="400" height="240" loading="lazy">
+    <span class="tc-badge">Popular</span>
+    <span class="tc-rating">⭐ 4.8</span>
+  </div>
+  <div class="tc-body">
+    <div class="tc-dest">India</div>
+    <h3 class="tc-title">Kerala — God's Own Country</h3>
+    <div class="tc-meta"><span>✈️ Flights Incl.</span><span>🌴 Backwaters</span></div>
+    <div class="tc-footer">
+      <a href="https://wa.me/8801878072988?text=I'm%20interested%20in%20the%20Kerala%20tour%20package.%20Please%20share%20details." target="_blank" rel="noopener" class="tc-book">Book Now</a>
+    </div>
+  </div>
+</article>
+
+
     </div><!-- /.tours-grid -->
+
 
     <!-- No Results — outside grid to avoid layout issues -->
     <div id="noResults">
@@ -394,6 +526,68 @@
 <!-- 
      AIRLINE
  -->
+<!--
+     DOMESTIC FLIGHTS
+-->
+<section id="domestic" aria-labelledby="domestic-title">
+  <div class="container">
+    <div class="domestic-head anim">
+      <div class="tag">✦ Domestic Routes</div>
+      <h2 class="section-title" id="domestic-title">Domestic Flights</h2>
+      <p class="section-sub">Book your domestic air tickets instantly via WhatsApp. Best fares guaranteed.</p>
+    </div>
+    <div class="domestic-grid">
+
+      <a href="https://wa.me/8801878072988?text=I%20want%20to%20book%20Dhaka%20to%20Chattogram%20flight.%20Please%20share%20options." target="_blank" rel="noopener" class="dcard anim">
+        <div class="dcard-img"><img src="./images/chattogram.webp" alt="Dhaka to Chattogram" loading="lazy"><div class="dcard-overlay"></div></div>
+        <div class="dcard-body">
+          <div class="dcard-route">Dhaka → Chattogram</div>
+          <div class="dcard-price">Starts from <strong>BDT 3,450</strong></div>
+          <div class="dcard-book">💬 Book on WhatsApp</div>
+        </div>
+      </a>
+
+      <a href="https://wa.me/8801878072988?text=I%20want%20to%20book%20Dhaka%20to%20Jessore%20flight.%20Please%20share%20options." target="_blank" rel="noopener" class="dcard anim">
+        <div class="dcard-img"><img src="./images/jessore.png" alt="Dhaka to Jessore" loading="lazy"><div class="dcard-overlay"></div></div>
+        <div class="dcard-body">
+          <div class="dcard-route">Dhaka → Jessore</div>
+          <div class="dcard-price">Starts from <strong>BDT 3,350</strong></div>
+          <div class="dcard-book">💬 Book on WhatsApp</div>
+        </div>
+      </a>
+
+      <a href="https://wa.me/8801878072988?text=I%20want%20to%20book%20Dhaka%20to%20Rajshahi%20flight.%20Please%20share%20options." target="_blank" rel="noopener" class="dcard anim">
+        <div class="dcard-img"><img src="/images/Rajshahi.webp" alt="Dhaka to Rajshahi" loading="lazy"><div class="dcard-overlay"></div></div>
+        <div class="dcard-body">
+          <div class="dcard-route">Dhaka → Rajshahi</div>
+          <div class="dcard-price">Starts from <strong>BDT 3,350</strong></div>
+          <div class="dcard-book">💬 Book on WhatsApp</div>
+        </div>
+      </a>
+
+      <a href="https://wa.me/8801878072988?text=I%20want%20to%20book%20Dhaka%20to%20Saidpur%20flight.%20Please%20share%20options." target="_blank" rel="noopener" class="dcard anim">
+        <div class="dcard-img"><img src="./images/saidpur.png" alt="Dhaka to Saidpur" loading="lazy"><div class="dcard-overlay"></div></div>
+        <div class="dcard-body">
+          <div class="dcard-route">Dhaka → Saidpur</div>
+          <div class="dcard-price">Starts from <strong>BDT 3,350</strong></div>
+          <div class="dcard-book">💬 Book on WhatsApp</div>
+        </div>
+      </a>
+
+      <a href="https://wa.me/8801878072988?text=I%20want%20to%20book%20Dhaka%20to%20Sylhet%20flight.%20Please%20share%20options." target="_blank" rel="noopener" class="dcard anim">
+        <div class="dcard-img"><img src="./images/Sylhet.png" alt="Dhaka to Sylhet" loading="lazy"><div class="dcard-overlay"></div></div>
+        <div class="dcard-body">
+          <div class="dcard-route">Dhaka → Sylhet</div>
+          <div class="dcard-price">Starts from <strong>BDT 3,350</strong></div>
+          <div class="dcard-book">💬 Book on WhatsApp</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
 <section id="airlines" aria-labelledby="airlines-title">
   <div class="container">
     <div class="airlines-head anim">
