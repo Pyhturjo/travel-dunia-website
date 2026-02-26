@@ -451,13 +451,14 @@ function toggleSound() {
 
 
 /* ── Loading screen ── */
+function hideLoader() {
+  var loader = document.getElementById('loader');
+  if (loader) loader.classList.add('hide');
+}
+setTimeout(hideLoader, 2500);
 window.addEventListener('load', function() {
-  setTimeout(function() {
-    var loader = document.getElementById('loader');
-    if (loader) loader.classList.add('hide');
-  }, 2200);
+  setTimeout(hideLoader, 400);
 });
-
 
 /* ── WhatsApp popup ── */
 function closeWaPopup() {

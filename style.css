@@ -986,10 +986,4 @@ footer { background: var(--dark); color: rgba(255,255,255,.65); padding: 64px 0 
 }
 
 
-/* ── CONTACT MAP ── */
-.contact-map {
-  border-radius: var(--radius); overflow: hidden;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm); margin-top: 4px;
-}
-.contact-map iframe { display: block; }
+
