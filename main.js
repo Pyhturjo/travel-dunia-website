@@ -448,3 +448,25 @@ function toggleSound() {
   video.muted = !video.muted;
   btn.textContent = video.muted ? '🔇' : '🔊';
 }
+
+
+/* ── Loading screen ── */
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var loader = document.getElementById('loader');
+    if (loader) loader.classList.add('hide');
+  }, 2200);
+});
+
+
+/* ── WhatsApp popup ── */
+function closeWaPopup() {
+  document.getElementById('waPopup').classList.remove('show');
+  sessionStorage.setItem('waPopupClosed', '1');
+}
+setTimeout(function() {
+  if (!sessionStorage.getItem('waPopupClosed')) {
+    var popup = document.getElementById('waPopup');
+    if (popup) popup.classList.add('show');
+  }
+}, 30000); // 30 seconds

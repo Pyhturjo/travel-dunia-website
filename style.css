@@ -134,9 +134,11 @@ ul { list-style: none; }
   content: ''; position: absolute; inset: 0;
   background: linear-gradient(140deg, rgba(10,26,20,.78) 0%, rgba(10,26,20,.38) 55%, rgba(10,26,20,.58) 100%);
 }
-.hero-slide-1 { background-image: url('./images/hero1.jpg'); }
-.hero-slide-2 { background-image: url('./images/hero2.jpg'); }
-.hero-slide-3 { background-image: url('./images/hero3.jpg'); }
+.hero-slide-1 { background-image: url('./images/hero1.webp'); }
+.hero-slide-2 { background-image: url('./images/hero2.webp'); }
+.hero-slide-3 { background-image: url('./images/hero3.webp'); }
+.hero-slide-4 { background-image: url('./images/hero4.webp'); }
+.hero-slide-5 { background-image: url('./images/hero5.webp'); }
 
 .hero-content {
   position: relative; z-index: 2; flex: 1;
@@ -895,3 +897,99 @@ footer { background: var(--dark); color: rgba(255,255,255,.65); padding: 64px 0 
 .vb-sound { position: absolute; bottom: 16px; right: 16px; background: rgba(255,255,255,.2); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,.3); color: #fff; font-size: 1.1rem; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; transition: all .2s; }
 .vb-sound:hover { background: rgba(255,255,255,.35); }
 @media (max-width: 600px) { #video-banner { height: 260px; } }
+
+/* ── LOADING SCREEN ── */
+#loader {
+  position: fixed; inset: 0; z-index: 99999;
+  background: var(--forest);
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+#loader.hide { opacity: 0; visibility: hidden; }
+.loader-inner { text-align: center; }
+.loader-logo {
+  width: 90px; height: 90px; border-radius: 50%;
+  border: 3px solid rgba(255,255,255,.2);
+  margin: 0 auto 16px;
+  animation: loaderPulse 1.5s ease-in-out infinite;
+}
+.loader-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 4px;
+}
+.loader-sub {
+  font-size: .78rem; color: var(--teal-light);
+  text-transform: uppercase; letter-spacing: .12em; margin-bottom: 28px;
+}
+.loader-bar {
+  width: 180px; height: 3px;
+  background: rgba(255,255,255,.15); border-radius: 100px;
+  margin: 0 auto; overflow: hidden;
+}
+.loader-fill {
+  height: 100%; width: 0; background: var(--teal-light);
+  border-radius: 100px;
+  animation: loaderProgress 2s ease forwards;
+}
+@keyframes loaderPulse {
+  0%,100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(43,181,160,.4); }
+  50% { transform: scale(1.06); box-shadow: 0 0 0 12px rgba(43,181,160,0); }
+}
+@keyframes loaderProgress {
+  0% { width: 0; } 100% { width: 100%; }
+}
+
+
+/* ── WHATSAPP POPUP ── */
+.wa-popup {
+  position: fixed; bottom: 100px; right: 28px;
+  z-index: 9997; width: 300px;
+  background: #fff; border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0,0,0,.18);
+  padding: 20px; border: 1px solid #e0ece6;
+  transform: translateY(20px) scale(.95);
+  opacity: 0; visibility: hidden;
+  transition: all .35s cubic-bezier(.4,0,.2,1);
+}
+.wa-popup.show { transform: none; opacity: 1; visibility: visible; }
+.wa-popup-close {
+  position: absolute; top: 10px; right: 12px;
+  background: none; border: none; font-size: .85rem;
+  color: var(--text-light); cursor: pointer; padding: 4px;
+}
+.wa-popup-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.wa-popup-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--teal); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: .85rem; flex-shrink: 0;
+}
+.wa-popup-name { font-weight: 700; color: var(--forest); font-size: .9rem; }
+.wa-popup-status { font-size: .72rem; color: var(--text-light); margin-top: 2px; }
+.wa-popup-bubble {
+  background: #f0fdf4; border-radius: 0 12px 12px 12px;
+  padding: 12px 14px; font-size: .85rem; color: var(--text);
+  line-height: 1.55; margin-bottom: 14px;
+  border: 1px solid #d1fae5;
+}
+.wa-popup-btn {
+  display: block; text-align: center;
+  background: #25D366; color: #fff;
+  padding: 12px; border-radius: 10px;
+  font-size: .88rem; font-weight: 700;
+  text-decoration: none; transition: background .2s;
+}
+.wa-popup-btn:hover { background: #1da851; }
+
+@media (max-width: 600px) {
+  .wa-popup { width: calc(100vw - 32px); right: 16px; bottom: 90px; }
+}
+
+
+/* ── CONTACT MAP ── */
+.contact-map {
+  border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm); margin-top: 4px;
+}
+.contact-map iframe { display: block; }

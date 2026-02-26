@@ -15,6 +15,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="loader-inner">
+    <img src="logo.png" alt="Travel Dunia" class="loader-logo">
+    <div class="loader-text">Travel Dunia</div>
+    <div class="loader-sub">Explore The World With Us</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
   
 
 <!--
@@ -64,6 +73,8 @@
       <div class="hs hero-slide-1"></div>
       <div class="hs hero-slide-2"></div>
       <div class="hs hero-slide-3"></div>
+      <div class="hs hero-slide-4"></div>
+      <div class="hs hero-slide-5"></div>
     </div>
   </div>
 
@@ -71,11 +82,13 @@
   <button class="hero-nav-btn" id="hPrev" aria-label="Previous slide">&#8592;</button>
   <button class="hero-nav-btn" id="hNext" aria-label="Next slide">&#8594;</button>
 
-  <!-- Slide dots — positioned ABOVE the search card -->
+  <!-- positioned ABOVE the search card -->
   <div class="hero-dots" role="tablist" aria-label="Slide indicators">
     <div class="hd active" data-i="0" role="tab" aria-label="Slide 1"></div>
     <div class="hd"        data-i="1" role="tab" aria-label="Slide 2"></div>
     <div class="hd"        data-i="2" role="tab" aria-label="Slide 3"></div>
+    <div class="hd"        data-i="3" role="tab" aria-label="Slide 4"></div>
+    <div class="hd"        data-i="4" role="tab" aria-label="Slide 5"></div>
   </div>
 
   <!-- Hero text content -->
@@ -146,7 +159,7 @@
 <!-- VIDEO BANNER -->
 <!-- VIDEO BANNER -->
 <section id="video-banner">
-  <video id="tdVideo" autoplay muted loop playsinline poster="./images/hero1.jpg">
+  <video id="tdVideo" autoplay muted loop playsinline poster="./images/hero1.webp">
     <source src="./images/TD Video.mp4" type="video/mp4">
   </video>
   <div class="vb-overlay">
@@ -166,8 +179,8 @@
 
       <!-- Left: Image -->
       <div class="why-image anim">
-      <img class="why-image-main" src="./images/l1.jpg" alt="Happy travelers exploring together" width="560" height="420" loading="lazy">
-<img class="why-image-float" src="./images/l2.jpg" alt="Beautiful destination view" width="200" height="200" loading="lazy">
+      <img class="why-image-main" src="./images/l1.webp" alt="Happy travelers exploring together" width="560" height="420" loading="lazy">
+<img class="why-image-float" src="./images/l2.webp" alt="Beautiful destination view" width="200" height="200" loading="lazy">
         <div class="why-float-badge">
           <div class="fi">🏆</div>
           <div>
@@ -248,7 +261,7 @@
       <!-- Card 1: Maldives Luxury -->
       <article class="tc anim" data-dest="maldives">
         <div class="tc-img">
-          <img src="./images/maldivs.jpg" alt="Maldives Overwater Bungalow" width="400" height="240" loading="lazy">
+          <img src="./images/Maldives.webp" alt="Maldives Overwater Bungalow" width="400" height="240" loading="lazy">
           <span class="tc-badge hot">🔥 Hot Deal</span>
           <span class="tc-rating">⭐ 4.9</span>
         </div>
@@ -269,7 +282,7 @@
       <!-- Card 2: Thailand -->
       <article class="tc anim" data-dest="thailand" style="transition-delay:.08s">
         <div class="tc-img">
-          <img src="./images/Thailand.jpg" alt="Bangkok Thailand Temple" width="400" height="240" loading="lazy">
+          <img src="./images/Thailand.webp" alt="Bangkok Thailand Temple" width="400" height="240" loading="lazy">
           <span class="tc-badge">Popular</span>
           <span class="tc-rating">⭐ 4.8</span>
         </div>
@@ -290,7 +303,7 @@
       <!-- Card 3: Dubai Glam -->
       <article class="tc anim" data-dest="dubai" style="transition-delay:.16s">
         <div class="tc-img">
-          <img src="./images/Dubai.jpg" alt="Dubai Skyline" width="400" height="240" loading="lazy">
+          <img src="./images/Dubai.webp" alt="Dubai Skyline" width="400" height="240" loading="lazy">
           <span class="tc-badge hot">🔥 Hot Deal</span>
           <span class="tc-rating">⭐ 4.9</span>
         </div>
@@ -311,7 +324,7 @@
       <!-- Card 4: Malaysia -->
       <article class="tc anim" data-dest="malaysia" style="transition-delay:.04s">
         <div class="tc-img">
-          <img src="./images/Kuala-lumpur.jpg" alt="Kuala Lumpur Skyline" width="400" height="240" loading="lazy">
+          <img src="./images/Kuala-lumpur.webp" alt="Kuala Lumpur Skyline" width="400" height="240" loading="lazy">
           <span class="tc-badge">Popular</span>
           <span class="tc-rating">⭐ 4.7</span>
         </div>
@@ -332,7 +345,7 @@
       <!-- Card 5: Singapore -->
       <article class="tc anim" data-dest="singapore" style="transition-delay:.12s">
         <div class="tc-img">
-          <img src="./images/Singapore.jpg" alt="Singapore Gardens by the Bay" width="400" height="240" loading="lazy">
+          <img src="./images/Singapore.webp" alt="Singapore Gardens by the Bay" width="400" height="240" loading="lazy">
           <span class="tc-badge new">New</span>
           <span class="tc-rating">⭐ 4.8</span>
         </div>
@@ -353,7 +366,7 @@
       <!-- Card 8: Maldives Honeymoon -->
       <article class="tc anim" data-dest="maldives" style="transition-delay:.16s">
         <div class="tc-img">
-          <img src="./images/maldivs.jpg" alt="Maldives Honeymoon Beach" width="400" height="240" loading="lazy">
+          <img src="./images/maldivs.webp" alt="Maldives Honeymoon Beach" width="400" height="240" loading="lazy">
           <span class="tc-badge">Honeymoon</span>
           <span class="tc-rating">⭐ 5.0</span>
         </div>
@@ -374,7 +387,7 @@
       <!-- Card 9: Dubai Desert -->
       <article class="tc anim" data-dest="dubai" style="transition-delay:.24s">
         <div class="tc-img">
-          <img src="./images/Dubai_Desert.jpg" alt="Dubai Desert Safari" width="400" height="240" loading="lazy">
+          <img src="./images/Dubai_Desert.webp" alt="Dubai Desert Safari" width="400" height="240" loading="lazy">
           <span class="tc-badge">Adventure</span>
           <span class="tc-rating">⭐ 4.8</span>
         </div>
@@ -478,7 +491,7 @@
   <div class="tc-img">
     <img src="./images/himac.webp" alt="Himachal Pradesh Tour" width="400" height="240" loading="lazy">
     <span class="tc-badge hot">🔥 Hot Deal</span>
-    <span class="tc-rating">⭐ 4.9</span>
+    <span class="tc-rating">⭐ 4.9</span>r
   </div>
   <div class="tc-body">
     <div class="tc-dest">India</div>
@@ -548,7 +561,7 @@
       </a>
 
       <a href="https://wa.me/8801878072988?text=I%20want%20to%20book%20Dhaka%20to%20Jessore%20flight.%20Please%20share%20options." target="_blank" rel="noopener" class="dcard anim">
-        <div class="dcard-img"><img src="./images/jessore.png" alt="Dhaka to Jessore" loading="lazy"><div class="dcard-overlay"></div></div>
+        <div class="dcard-img"><img src="./images/jessore.webp" alt="Dhaka to Jessore" loading="lazy"><div class="dcard-overlay"></div></div>
         <div class="dcard-body">
           <div class="dcard-route">Dhaka → Jessore</div>
           <div class="dcard-price">Starts from <strong>BDT 3,350</strong></div>
@@ -566,7 +579,7 @@
       </a>
 
       <a href="https://wa.me/8801878072988?text=I%20want%20to%20book%20Dhaka%20to%20Saidpur%20flight.%20Please%20share%20options." target="_blank" rel="noopener" class="dcard anim">
-        <div class="dcard-img"><img src="./images/saidpur.png" alt="Dhaka to Saidpur" loading="lazy"><div class="dcard-overlay"></div></div>
+        <div class="dcard-img"><img src="./images/saidpur.webp" alt="Dhaka to Saidpur" loading="lazy"><div class="dcard-overlay"></div></div>
         <div class="dcard-body">
           <div class="dcard-route">Dhaka → Saidpur</div>
           <div class="dcard-price">Starts from <strong>BDT 3,350</strong></div>
@@ -575,7 +588,7 @@
       </a>
 
       <a href="https://wa.me/8801878072988?text=I%20want%20to%20book%20Dhaka%20to%20Sylhet%20flight.%20Please%20share%20options." target="_blank" rel="noopener" class="dcard anim">
-        <div class="dcard-img"><img src="./images/Sylhet.png" alt="Dhaka to Sylhet" loading="lazy"><div class="dcard-overlay"></div></div>
+        <div class="dcard-img"><img src="./images/Sylhet.webp" alt="Dhaka to Sylhet" loading="lazy"><div class="dcard-overlay"></div></div>
         <div class="dcard-body">
           <div class="dcard-route">Dhaka → Sylhet</div>
           <div class="dcard-price">Starts from <strong>BDT 3,350</strong></div>
@@ -1309,14 +1322,23 @@
               <div class="ci-val">traveldunia.bd@gmail.com</div>
             </div>
           </div>
-          <div class="ci">
-            <div class="ci-icon">📍</div>
-            <div>
-              <div class="ci-lbl">Office</div>
-              <div class="ci-val">Travel Dunia <br>
-              House# 16 (1st Floor), Road 4, Block F, Banani, Dhaka- 1213</div>
-            </div>
-          </div>
+         <div class="ci">
+  <div class="ci-icon">📍</div>
+  <div>
+    <div class="ci-lbl">Office</div>
+    <div class="ci-val">Travel Dunia <br>
+    House# 16 (1st Floor), Road 4, Block F, Banani, Dhaka- 1213</div>
+  </div>
+</div>
+<!-- Google Map -->
+<div class="contact-map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.6!2d90.4019!3d23.7942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sHouse+16+Road+4+Block+F+Banani+Dhaka!5e0!3m2!1sen!2sbd!4v1"
+    width="100%" height="200" style="border:0;" allowfullscreen=""
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    title="Travel Dunia Office Location">
+  </iframe>
+</div>
           <div class="ci">
             <div class="ci-icon">🕐</div>
             <div>
@@ -1556,6 +1578,27 @@
     <span class="mb-num">01737-138585</span>
   </a>
 </div>
+
+<!-- WHATSAPP POPUP -->
+<div class="wa-popup" id="waPopup">
+  <button class="wa-popup-close" onclick="closeWaPopup()">✕</button>
+  <div class="wa-popup-header">
+    <div class="wa-popup-avatar">TD</div>
+    <div>
+      <div class="wa-popup-name">Travel Dunia</div>
+      <div class="wa-popup-status">🟢 Online — replies instantly</div>
+    </div>
+  </div>
+  <div class="wa-popup-bubble">
+    👋 Need help planning your trip? Chat with us and get the best deal today!
+  </div>
+  <a href="https://wa.me/8801878072988?text=Hi%20Travel%20Dunia!%20I%20need%20help%20planning%20my%20trip." target="_blank" rel="noopener" class="wa-popup-btn">
+    💬 Start Chat on WhatsApp
+  </a>
+</div>
+
+
+
 <!-- Scroll to top -->
 <button id="stt" aria-label="Scroll to top" title="Back to top">↑</button>
 
