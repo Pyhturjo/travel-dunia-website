@@ -46,6 +46,7 @@
         <a href="#why">About</a>
         <a href="#tours">Tours</a>
         <a href="#domestic">Domestic</a>
+        <a href="#flights">Flights</a>
         <a href="#airlines">Airlines</a>
         <a href="#visa">Visa</a>
         <a href="#testimonials">Reviews</a>
@@ -598,7 +599,321 @@
   </div>
 </section>
 
+<!--
+     FLIGHT SEARCH
+-->
+<section id="flights" aria-labelledby="flights-title">
+  <div class="flight-hero">
+    <div class="container">
+      <div class="flight-head anim">
+        <div class="tag">✦ Flight Search</div>
+        <h2 class="section-title" id="flights-title" style="color:#fff">Find Your Best Flight</h2>
+        <p class="section-sub" style="color:rgba(255,255,255,.65)">Tell us your route — we find the best price and reply within 30 minutes</p>
+      </div>
 
+      <div class="flight-box anim">
+
+        <div class="flt-tabs">
+          <button class="flt-tab active" onclick="setTrip(this,'return')">↔️ Return</button>
+          <button class="flt-tab" onclick="setTrip(this,'oneway')">→ One Way</button>
+          <button class="flt-tab" onclick="setTrip(this,'multi')">🗺️ Multi-city</button>
+        </div>
+
+        <div class="flt-body">
+
+          <div class="flt-row">
+            <div class="flt-field">
+              <label>✈️ From</label>
+              <select id="flt-from">
+  <option value="">Select origin</option>
+  <optgroup label="🇧🇩 Bangladesh">
+    <option value="Dhaka (DAC)">🇧🇩 Dhaka (DAC)</option>
+    <option value="Chattogram (CGP)">🇧🇩 Chattogram (CGP)</option>
+    <option value="Sylhet (ZYL)">🇧🇩 Sylhet (ZYL)</option>
+    <option value="Rajshahi (RJH)">🇧🇩 Rajshahi (RJH)</option>
+    <option value="Jessore (JSR)">🇧🇩 Jessore (JSR)</option>
+    <option value="Saidpur (SPD)">🇧🇩 Saidpur (SPD)</option>
+  </optgroup>
+  <optgroup label="🇦🇪 UAE">
+    <option value="Dubai (DXB)">🇦🇪 Dubai (DXB)</option>
+    <option value="Abu Dhabi (AUH)">🇦🇪 Abu Dhabi (AUH)</option>
+    <option value="Sharjah (SHJ)">🇦🇪 Sharjah (SHJ)</option>
+  </optgroup>
+  <optgroup label="🇸🇦 Saudi Arabia">
+    <option value="Riyadh (RUH)">🇸🇦 Riyadh (RUH)</option>
+    <option value="Jeddah (JED)">🇸🇦 Jeddah (JED)</option>
+    <option value="Medina (MED)">🇸🇦 Medina (MED)</option>
+    <option value="Dammam (DMM)">🇸🇦 Dammam (DMM)</option>
+  </optgroup>
+  <optgroup label="🇶🇦 Qatar">
+    <option value="Doha (DOH)">🇶🇦 Doha (DOH)</option>
+  </optgroup>
+  <optgroup label="🇴🇲 Oman">
+    <option value="Muscat (MCT)">🇴🇲 Muscat (MCT)</option>
+  </optgroup>
+  <optgroup label="🇰🇼 Kuwait">
+    <option value="Kuwait City (KWI)">🇰🇼 Kuwait City (KWI)</option>
+  </optgroup>
+  <optgroup label="🇧🇭 Bahrain">
+    <option value="Bahrain (BAH)">🇧🇭 Bahrain (BAH)</option>
+  </optgroup>
+  <optgroup label="🇹🇭 Thailand">
+    <option value="Bangkok (BKK)">🇹🇭 Bangkok (BKK)</option>
+    <option value="Phuket (HKT)">🇹🇭 Phuket (HKT)</option>
+    <option value="Chiang Mai (CNX)">🇹🇭 Chiang Mai (CNX)</option>
+  </optgroup>
+  <optgroup label="🇲🇾 Malaysia">
+    <option value="Kuala Lumpur (KUL)">🇲🇾 Kuala Lumpur (KUL)</option>
+    <option value="Penang (PEN)">🇲🇾 Penang (PEN)</option>
+    <option value="Kota Kinabalu (BKI)">🇲🇾 Kota Kinabalu (BKI)</option>
+  </optgroup>
+  <optgroup label="🇸🇬 Singapore">
+    <option value="Singapore (SIN)">🇸🇬 Singapore (SIN)</option>
+  </optgroup>
+  <optgroup label="🇮🇩 Indonesia">
+    <option value="Bali (DPS)">🇮🇩 Bali (DPS)</option>
+    <option value="Jakarta (CGK)">🇮🇩 Jakarta (CGK)</option>
+  </optgroup>
+  <optgroup label="🇲🇻 Maldives">
+    <option value="Maldives (MLE)">🇲🇻 Maldives (MLE)</option>
+  </optgroup>
+  <optgroup label="🇮🇳 India">
+    <option value="Delhi (DEL)">🇮🇳 Delhi (DEL)</option>
+    <option value="Kolkata (CCU)">🇮🇳 Kolkata (CCU)</option>
+    <option value="Mumbai (BOM)">🇮🇳 Mumbai (BOM)</option>
+    <option value="Chennai (MAA)">🇮🇳 Chennai (MAA)</option>
+    <option value="Bangalore (BLR)">🇮🇳 Bangalore (BLR)</option>
+    <option value="Hyderabad (HYD)">🇮🇳 Hyderabad (HYD)</option>
+    <option value="Goa (GOI)">🇮🇳 Goa (GOI)</option>
+  </optgroup>
+  <optgroup label="🇳🇵 Nepal">
+    <option value="Kathmandu (KTM)">🇳🇵 Kathmandu (KTM)</option>
+  </optgroup>
+  <optgroup label="🇱🇰 Sri Lanka">
+    <option value="Colombo (CMB)">🇱🇰 Colombo (CMB)</option>
+  </optgroup>
+  <optgroup label="🇹🇷 Turkey">
+    <option value="Istanbul (IST)">🇹🇷 Istanbul (IST)</option>
+  </optgroup>
+  <optgroup label="🇬🇧 UK">
+    <option value="London (LHR)">🇬🇧 London (LHR)</option>
+    <option value="London Gatwick (LGW)">🇬🇧 London Gatwick (LGW)</option>
+    <option value="Manchester (MAN)">🇬🇧 Manchester (MAN)</option>
+  </optgroup>
+  <optgroup label="🇮🇹 Italy">
+    <option value="Rome (FCO)">🇮🇹 Rome (FCO)</option>
+    <option value="Milan (MXP)">🇮🇹 Milan (MXP)</option>
+  </optgroup>
+  <optgroup label="🇩🇪 Germany">
+    <option value="Frankfurt (FRA)">🇩🇪 Frankfurt (FRA)</option>
+    <option value="Munich (MUC)">🇩🇪 Munich (MUC)</option>
+  </optgroup>
+  <optgroup label="🇫🇷 France">
+    <option value="Paris (CDG)">🇫🇷 Paris (CDG)</option>
+  </optgroup>
+  <optgroup label="🇺🇸 USA">
+    <option value="New York (JFK)">🇺🇸 New York (JFK)</option>
+    <option value="Los Angeles (LAX)">🇺🇸 Los Angeles (LAX)</option>
+    <option value="Washington (IAD)">🇺🇸 Washington (IAD)</option>
+  </optgroup>
+  <optgroup label="🇨🇦 Canada">
+    <option value="Toronto (YYZ)">🇨🇦 Toronto (YYZ)</option>
+    <option value="Vancouver (YVR)">🇨🇦 Vancouver (YVR)</option>
+  </optgroup>
+  <optgroup label="🇦🇺 Australia">
+    <option value="Sydney (SYD)">🇦🇺 Sydney (SYD)</option>
+    <option value="Melbourne (MEL)">🇦🇺 Melbourne (MEL)</option>
+  </optgroup>
+  <optgroup label="🇯🇵 Japan">
+    <option value="Tokyo (NRT)">🇯🇵 Tokyo (NRT)</option>
+    <option value="Osaka (KIX)">🇯🇵 Osaka (KIX)</option>
+  </optgroup>
+  <optgroup label="🇰🇷 South Korea">
+    <option value="Seoul (ICN)">🇰🇷 Seoul (ICN)</option>
+  </optgroup>
+  <optgroup label="🇨🇳 China">
+    <option value="Beijing (PEK)">🇨🇳 Beijing (PEK)</option>
+    <option value="Shanghai (PVG)">🇨🇳 Shanghai (PVG)</option>
+    <option value="Guangzhou (CAN)">🇨🇳 Guangzhou (CAN)</option>
+  </optgroup>
+</select>
+            </div>
+            <button class="flt-swap" onclick="swapCities()" title="Swap">⇄</button>
+            <div class="flt-field">
+              <label>🌍 To</label>
+              <select id="flt-to">
+  <option value="">Select destination</option>
+  <optgroup label="🇧🇩 Bangladesh">
+    <option value="Dhaka (DAC)">🇧🇩 Dhaka (DAC)</option>
+    <option value="Chattogram (CGP)">🇧🇩 Chattogram (CGP)</option>
+    <option value="Sylhet (ZYL)">🇧🇩 Sylhet (ZYL)</option>
+    <option value="Rajshahi (RJH)">🇧🇩 Rajshahi (RJH)</option>
+    <option value="Jessore (JSR)">🇧🇩 Jessore (JSR)</option>
+    <option value="Saidpur (SPD)">🇧🇩 Saidpur (SPD)</option>
+  </optgroup>
+  <optgroup label="🇦🇪 UAE">
+    <option value="Dubai (DXB)">🇦🇪 Dubai (DXB)</option>
+    <option value="Abu Dhabi (AUH)">🇦🇪 Abu Dhabi (AUH)</option>
+    <option value="Sharjah (SHJ)">🇦🇪 Sharjah (SHJ)</option>
+  </optgroup>
+  <optgroup label="🇸🇦 Saudi Arabia">
+    <option value="Riyadh (RUH)">🇸🇦 Riyadh (RUH)</option>
+    <option value="Jeddah (JED)">🇸🇦 Jeddah (JED)</option>
+    <option value="Medina (MED)">🇸🇦 Medina (MED)</option>
+    <option value="Dammam (DMM)">🇸🇦 Dammam (DMM)</option>
+  </optgroup>
+  <optgroup label="🇶🇦 Qatar">
+    <option value="Doha (DOH)">🇶🇦 Doha (DOH)</option>
+  </optgroup>
+  <optgroup label="🇴🇲 Oman">
+    <option value="Muscat (MCT)">🇴🇲 Muscat (MCT)</option>
+  </optgroup>
+  <optgroup label="🇰🇼 Kuwait">
+    <option value="Kuwait City (KWI)">🇰🇼 Kuwait City (KWI)</option>
+  </optgroup>
+  <optgroup label="🇧🇭 Bahrain">
+    <option value="Bahrain (BAH)">🇧🇭 Bahrain (BAH)</option>
+  </optgroup>
+  <optgroup label="🇹🇭 Thailand">
+    <option value="Bangkok (BKK)">🇹🇭 Bangkok (BKK)</option>
+    <option value="Phuket (HKT)">🇹🇭 Phuket (HKT)</option>
+    <option value="Chiang Mai (CNX)">🇹🇭 Chiang Mai (CNX)</option>
+  </optgroup>
+  <optgroup label="🇲🇾 Malaysia">
+    <option value="Kuala Lumpur (KUL)">🇲🇾 Kuala Lumpur (KUL)</option>
+    <option value="Penang (PEN)">🇲🇾 Penang (PEN)</option>
+    <option value="Kota Kinabalu (BKI)">🇲🇾 Kota Kinabalu (BKI)</option>
+  </optgroup>
+  <optgroup label="🇸🇬 Singapore">
+    <option value="Singapore (SIN)">🇸🇬 Singapore (SIN)</option>
+  </optgroup>
+  <optgroup label="🇮🇩 Indonesia">
+    <option value="Bali (DPS)">🇮🇩 Bali (DPS)</option>
+    <option value="Jakarta (CGK)">🇮🇩 Jakarta (CGK)</option>
+  </optgroup>
+  <optgroup label="🇲🇻 Maldives">
+    <option value="Maldives (MLE)">🇲🇻 Maldives (MLE)</option>
+  </optgroup>
+  <optgroup label="🇮🇳 India">
+    <option value="Delhi (DEL)">🇮🇳 Delhi (DEL)</option>
+    <option value="Kolkata (CCU)">🇮🇳 Kolkata (CCU)</option>
+    <option value="Mumbai (BOM)">🇮🇳 Mumbai (BOM)</option>
+    <option value="Chennai (MAA)">🇮🇳 Chennai (MAA)</option>
+    <option value="Bangalore (BLR)">🇮🇳 Bangalore (BLR)</option>
+    <option value="Hyderabad (HYD)">🇮🇳 Hyderabad (HYD)</option>
+    <option value="Goa (GOI)">🇮🇳 Goa (GOI)</option>
+  </optgroup>
+  <optgroup label="🇳🇵 Nepal">
+    <option value="Kathmandu (KTM)">🇳🇵 Kathmandu (KTM)</option>
+  </optgroup>
+  <optgroup label="🇱🇰 Sri Lanka">
+    <option value="Colombo (CMB)">🇱🇰 Colombo (CMB)</option>
+  </optgroup>
+  <optgroup label="🇹🇷 Turkey">
+    <option value="Istanbul (IST)">🇹🇷 Istanbul (IST)</option>
+  </optgroup>
+  <optgroup label="🇬🇧 UK">
+    <option value="London (LHR)">🇬🇧 London (LHR)</option>
+    <option value="London Gatwick (LGW)">🇬🇧 London Gatwick (LGW)</option>
+    <option value="Manchester (MAN)">🇬🇧 Manchester (MAN)</option>
+  </optgroup>
+  <optgroup label="🇮🇹 Italy">
+    <option value="Rome (FCO)">🇮🇹 Rome (FCO)</option>
+    <option value="Milan (MXP)">🇮🇹 Milan (MXP)</option>
+  </optgroup>
+  <optgroup label="🇩🇪 Germany">
+    <option value="Frankfurt (FRA)">🇩🇪 Frankfurt (FRA)</option>
+    <option value="Munich (MUC)">🇩🇪 Munich (MUC)</option>
+  </optgroup>
+  <optgroup label="🇫🇷 France">
+    <option value="Paris (CDG)">🇫🇷 Paris (CDG)</option>
+  </optgroup>
+  <optgroup label="🇺🇸 USA">
+    <option value="New York (JFK)">🇺🇸 New York (JFK)</option>
+    <option value="Los Angeles (LAX)">🇺🇸 Los Angeles (LAX)</option>
+    <option value="Washington (IAD)">🇺🇸 Washington (IAD)</option>
+  </optgroup>
+  <optgroup label="🇨🇦 Canada">
+    <option value="Toronto (YYZ)">🇨🇦 Toronto (YYZ)</option>
+    <option value="Vancouver (YVR)">🇨🇦 Vancouver (YVR)</option>
+  </optgroup>
+  <optgroup label="🇦🇺 Australia">
+    <option value="Sydney (SYD)">🇦🇺 Sydney (SYD)</option>
+    <option value="Melbourne (MEL)">🇦🇺 Melbourne (MEL)</option>
+  </optgroup>
+  <optgroup label="🇯🇵 Japan">
+    <option value="Tokyo (NRT)">🇯🇵 Tokyo (NRT)</option>
+    <option value="Osaka (KIX)">🇯🇵 Osaka (KIX)</option>
+  </optgroup>
+  <optgroup label="🇰🇷 South Korea">
+    <option value="Seoul (ICN)">🇰🇷 Seoul (ICN)</option>
+  </optgroup>
+  <optgroup label="🇨🇳 China">
+    <option value="Beijing (PEK)">🇨🇳 Beijing (PEK)</option>
+    <option value="Shanghai (PVG)">🇨🇳 Shanghai (PVG)</option>
+    <option value="Guangzhou (CAN)">🇨🇳 Guangzhou (CAN)</option>
+  </optgroup>
+</select>
+            </div>
+          </div>
+
+          <div class="flt-row">
+            <div class="flt-field">
+              <label>📅 Depart</label>
+              <input type="date" id="flt-depart">
+            </div>
+            <div class="flt-field" id="flt-return-wrap">
+              <label>📅 Return</label>
+              <input type="date" id="flt-return">
+            </div>
+            <div class="flt-field">
+              <label>👥 Passengers</label>
+              <select id="flt-pax">
+                <option value="1 Adult">1 Adult</option>
+                <option value="2 Adults">2 Adults</option>
+                <option value="3 Adults">3 Adults</option>
+                <option value="4 Adults">4 Adults</option>
+                <option value="Family (2 Adults + 2 Children)">Family (2+2)</option>
+                <option value="Group (5+ people)">Group (5+)</option>
+              </select>
+            </div>
+            <div class="flt-field">
+  <label>💺 Class</label>
+  <select id="flt-class">
+    <option value="Economy">Economy</option>
+    <option value="Business">Business</option>
+    <option value="First Class">First Class</option>
+  </select>
+</div>
+<div class="flt-field">
+  <label>🕐 Preferred Time</label>
+  <select id="flt-time">
+    <option value="Any Time">Any Time</option>
+    <option value="Early Morning (12am - 6am)">🌙 Early Morning (12am–6am)</option>
+    <option value="Morning (6am - 12pm)">🌅 Morning (6am–12pm)</option>
+    <option value="Afternoon (12pm - 6pm)">☀️ Afternoon (12pm–6pm)</option>
+    <option value="Evening (6pm - 9pm)">🌆 Evening (6pm–9pm)</option>
+    <option value="Night (9pm - 12am)">🌃 Night (9pm–12am)</option>
+  </select>
+</div>
+          </div>
+
+          <button class="flt-search-btn" onclick="searchFlight()">
+            💬 Get Best Price on WhatsApp
+          </button>
+
+          <div class="flt-perks">
+            <span class="flt-perk">✅ Best price guarantee</span>
+            <span class="flt-perk">⚡ Reply in 30 mins</span>
+            <span class="flt-perk">🎯 All airlines compared</span>
+            <span class="flt-perk">💳 bKash · Nagad · Bank</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 

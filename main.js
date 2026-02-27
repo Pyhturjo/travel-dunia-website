@@ -471,3 +471,70 @@ setTimeout(function() {
     if (popup) popup.classList.add('show');
   }
 }, 30000); // 30 seconds
+
+
+
+
+/* ══ FLIGHT SEARCH ══ */
+var fltTripType = 'return';
+
+function setTrip(btn, type) {
+  fltTripType = type;
+  document.querySelectorAll('.flt-tab').forEach(function(t) {
+    t.classList.remove('active');
+  });
+  btn.classList.add('active');
+  var retWrap = document.getElementById('flt-return-wrap');
+  if (retWrap) retWrap.style.display = (type === 'oneway') ? 'none' : '';
+}
+
+function swapCities() {
+  var from = document.getElementById('flt-from');
+  var to   = document.getElementById('flt-to');
+  if (!from || !to) return;
+  var tmp  = from.value;
+  from.value = to.value;
+  to.value   = tmp;
+}
+
+function searchFlight() {
+  var from   = document.getElementById('flt-from');
+  var to     = document.getElementById('flt-to');
+  var depart = document.getElementById('flt-depart');
+  var ret    = document.getElementById('flt-return');
+  var pax    = document.getElementById('flt-pax');
+  var cls    = document.getElementById('flt-class');
+  var time   = document.getElementById('flt-time');
+
+  if (!to || !to.value) {
+    alert('Please select a destination.');
+    return;
+  }
+  if (!depart || !depart.value) {
+    alert('Please select a departure date.');
+    return;
+  }
+
+  var fromVal  = from   ? from.value   : 'Dhaka (DAC)';
+  var toVal    = to.value;
+  var departVal= depart.value;
+  var retVal   = (ret && ret.value && fltTripType === 'return') ? ret.value : '';
+  var paxVal   = pax    ? pax.value    : '1 Adult';
+  var clsVal   = cls    ? cls.value    : 'Economy';
+  var timeVal  = time   ? time.value   : 'Any Time';
+
+  var msg = '✈️ *Flight Price Request*\n';
+  msg += '━━━━━━━━━━━━━━━━\n';
+  msg += '🛫 From: '     + fromVal   + '\n';
+  msg += '🛬 To: '       + toVal     + '\n';
+  msg += '📅 Depart: '   + departVal + '\n';
+  if (retVal) msg += '📅 Return: ' + retVal + '\n';
+  msg += '👥 Passengers: ' + paxVal  + '\n';
+  msg += '💺 Class: '    + clsVal    + '\n';
+  msg += '🕐 Preferred Time: ' + timeVal + '\n';
+  msg += '🔄 Trip: '     + (fltTripType === 'return' ? 'Return' : fltTripType === 'oneway' ? 'One Way' : 'Multi-city') + '\n';
+  msg += '━━━━━━━━━━━━━━━━\n';
+  msg += 'Please share the best available fare. Thank you!';
+
+  window.open('https://wa.me/8801878072988?text=' + encodeURIComponent(msg), '_blank');
+}
