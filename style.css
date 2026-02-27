@@ -295,6 +295,10 @@ ul { list-style: none; }
 .al-airasia  { background: linear-gradient(135deg,#e40027,#b3001f); }
 .al-singapore{ background: linear-gradient(135deg,#0066cc,#003d99); }
 .al-thai     { background: linear-gradient(135deg,#4b0082,#6a0dad); }
+.al-indigo   { background: linear-gradient(135deg,#0052cc,#003d99); }
+.al-arabia   { background: linear-gradient(135deg,#cc0000,#990000); }
+.al-flydubai2{ background: linear-gradient(135deg,#e52329,#a50d11); }
+.al-usbangla { background: linear-gradient(135deg,#006837,#004d26); }
 
 
 /* ═══ STATS ══════════════════════════════ */
