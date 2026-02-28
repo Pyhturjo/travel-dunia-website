@@ -1097,3 +1097,18 @@ footer { background: var(--dark); color: rgba(255,255,255,.65); padding: 64px 0 
   .flt-field { min-width: 100%; }
   .flight-hero { padding: 56px 0; }
 }
+
+
+/* ── Dev Credit ── */
+.dev-credit {
+  font-size: .75rem;
+  color: rgba(255,255,255,.35);
+  margin-top: 6px;
+}
+.dev-credit a {
+  color: var(--teal-light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .2s;
+}
+.dev-credit a:hover { color: #fff; }
