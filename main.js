@@ -515,26 +515,49 @@ function searchFlight() {
     return;
   }
 
-  var fromVal  = from   ? from.value   : 'Dhaka (DAC)';
-  var toVal    = to.value;
-  var departVal= depart.value;
-  var retVal   = (ret && ret.value && fltTripType === 'return') ? ret.value : '';
-  var paxVal   = pax    ? pax.value    : '1 Adult';
-  var clsVal   = cls    ? cls.value    : 'Economy';
-  var timeVal  = time   ? time.value   : 'Any Time';
+  var fromVal   = from   ? from.value   : 'Dhaka (DAC)';
+  var toVal     = to.value;
+  var departVal = depart.value;
+  var retVal    = (ret && ret.value && fltTripType === 'return') ? ret.value : '';
+  var paxVal    = pax    ? pax.value    : '1 Adult';
+  var clsVal    = cls    ? cls.value    : 'Economy';
+  var timeVal   = time   ? time.value   : 'Any Time';
+  var tripVal   = fltTripType === 'return' ? 'Return' : fltTripType === 'oneway' ? 'One Way' : 'Multi-city';
 
-  var msg = '✈️ *Flight Price Request*\n';
-  msg += '━━━━━━━━━━━━━━━━\n';
-  msg += '🛫 From: '     + fromVal   + '\n';
-  msg += '🛬 To: '       + toVal     + '\n';
-  msg += '📅 Depart: '   + departVal + '\n';
-  if (retVal) msg += '📅 Return: ' + retVal + '\n';
-  msg += '👥 Passengers: ' + paxVal  + '\n';
-  msg += '💺 Class: '    + clsVal    + '\n';
-  msg += '🕐 Preferred Time: ' + timeVal + '\n';
-  msg += '🔄 Trip: '     + (fltTripType === 'return' ? 'Return' : fltTripType === 'oneway' ? 'One Way' : 'Multi-city') + '\n';
-  msg += '━━━━━━━━━━━━━━━━\n';
-  msg += 'Please share the best available fare. Thank you!';
+  var msg = '';
+  msg += 'Hello Travel Dunia!\n\n';
+  msg += '*FLIGHT PRICE REQUEST*\n';
+  msg += '================================\n';
+  msg += '*From        :* ' + fromVal   + '\n';
+  msg += '*To          :* ' + toVal     + '\n';
+  msg += '*Depart Date :* ' + departVal + '\n';
+  if (retVal)
+  msg += '*Return Date :* ' + retVal    + '\n';
+  msg += '*Passengers  :* ' + paxVal    + '\n';
+  msg += '*Class       :* ' + clsVal    + '\n';
+  msg += '*Time        :* ' + timeVal   + '\n';
+  msg += '*Trip Type   :* ' + tripVal   + '\n';
+  msg += '================================\n';
+  msg += 'Please share the best available fare.\n';
+  msg += 'Thank you!';
 
   window.open('https://wa.me/8801878072988?text=' + encodeURIComponent(msg), '_blank');
 }
+
+// The output will look like this on **both desktop and mobile**:
+
+// Hello Travel Dunia!
+
+// *FLIGHT PRICE REQUEST*
+// ================================
+// *From        :* Dhaka (DAC)
+// *To          :* Dubai (DXB)
+// *Depart Date :* 2026-03-05
+// *Return Date :* 2026-03-11
+// *Passengers  :* 2 Adults
+// *Class       :* Economy
+// *Time        :* Morning (6am-12pm)
+// *Trip Type   :* Return
+// ================================
+// Please share the best available fare.
+// Thank you!
