@@ -8,7 +8,7 @@
   <meta property="og:title" content="Travel Dunia — Explore The World With Us">
   <meta property="og:description" content="Premium tour packages & travel solutions from Bangladesh. Maldives, Dubai, Thailand, Umrah & more.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="logo.png">
+  <meta property="og:image" content="https://traveldunia.com.bd/logo.png">
   <meta property="og:url" content="https://traveldunia.com.bd">
   <title>Travel Dunia — Explore The World With Us</title>
   <link rel="icon" href="logo.png" type="image/png">
@@ -22,7 +22,7 @@
     <div class="loader-text">Travel Dunia</div>
     <div class="loader-sub">Explore The World With Us</div>
     <div class="loader-bar"><div class="loader-fill"></div></div>
-  </div>
+  </div>`
 </div>
   
 
@@ -1243,93 +1243,18 @@
 
     <!-- Country Tabs -->
     <div class="visa-tabs" role="tablist">
-      <button class="visa-tab active" data-country="uae" role="tab">🇦🇪 UAE</button>
-      <button class="visa-tab" data-country="thailand" role="tab">🇹🇭 Thailand</button>
+      <button class="visa-tab active" data-country="thailand" role="tab">🇹🇭 Thailand</button>
       <button class="visa-tab" data-country="malaysia" role="tab">🇲🇾 Malaysia</button>
       <button class="visa-tab" data-country="singapore" role="tab">🇸🇬 Singapore</button>
-      <button class="visa-tab" data-country="saudi" role="tab">🇸🇦 Saudi</button>
-      <button class="visa-tab" data-country="maldives" role="tab">🇲🇻 Maldives</button>
-      <button class="visa-tab" data-country="india" role="tab">🇮🇳 India</button>
-      <button class="visa-tab" data-country="turkey" role="tab">🇹🇷 Turkey</button>
     </div>
 
     <!-- Visa Panels -->
     <div class="visa-panels">
 
-      <!-- UAE -->
-      <div class="visa-panel active" data-panel="uae">
-        <div class="visa-panel-left">
-          <div class="visa-country-header">
-            <span class="visa-flag-big">🇦🇪</span>
-            <div>
-              <h3 class="visa-country-name">United Arab Emirates</h3>
-              <p class="visa-country-sub">Dubai · Abu Dhabi · Sharjah</p>
-            </div>
-          </div>
-
-          <!-- Visa Type Selector -->
-          <div class="visa-type-selector" data-country="uae">
-            <p class="vts-label">Select Visa Type:</p>
-            <div class="vts-buttons">
-              <button class="vts-btn active" data-type="tourist30">Tourist 30 Days</button>
-              <button class="vts-btn" data-type="tourist60">Tourist 60 Days</button>
-              <button class="vts-btn" data-type="transit">Transit 96 Hours</button>
-            </div>
-          </div>
-
-          <div class="visa-stats-row">
-            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">3–5 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳4,500+</div><div class="visa-stat-lbl">Visa Fee</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">98%</div><div class="visa-stat-lbl">Approval Rate</div></div>
-          </div>
-
-          <button class="visa-apply-btn" onclick="applyVisaWA('UAE', this)">💬 Apply via WhatsApp</button>
-
-          <!-- Documents per type -->
-          <div class="visa-docs">
-            <h4 class="visa-docs-title">📋 Required Documents</h4>
-
-            <div class="vdocs" data-for="uae-tourist30">
-              <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Passport-size photo (white background)</li>
-                <li>Bank statement — last 3 months (min. ৳50,000 balance)</li>
-                <li>Confirmed return flight ticket</li>
-                <li>Hotel booking confirmation</li>
-                <li>NID copy</li>
-                <li>Employment letter or business trade license</li>
-              </ul>
-            </div>
-
-            <div class="vdocs" data-for="uae-tourist60" style="display:none">
-              <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Passport-size photo (white background)</li>
-                <li>Bank statement — last 6 months (min. ৳80,000 balance)</li>
-                <li>Confirmed return flight ticket</li>
-                <li>Hotel booking confirmation</li>
-                <li>NID copy</li>
-                <li>Employment letter or business trade license</li>
-                <li>Salary certificate (if employed)</li>
-              </ul>
-            </div>
-
-            <div class="vdocs" data-for="uae-transit" style="display:none">
-              <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Passport-size photo (white background)</li>
-                <li>Confirmed onward flight ticket</li>
-                <li>Visa of final destination country</li>
-                <li>NID copy</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div><!-- /uae -->
+      
 
       <!-- Thailand -->
-      <div class="visa-panel" data-panel="thailand">
+       <div class="visa-panel" data-panel="thailand">
         <div class="visa-panel-left">
           <div class="visa-country-header">
             <span class="visa-flag-big">🇹🇭</span>
@@ -1340,11 +1265,13 @@
           </div>
 
           <div class="visa-type-selector" data-country="thailand">
-            <p class="vts-label">Select Visa Type:</p>
+            <p class="vts-label">Select Applicant Type:</p>
             <div class="vts-buttons">
-              <button class="vts-btn active" data-type="tourist30">Tourist 30 Days</button>
-              <button class="vts-btn" data-type="tourist60">Tourist 60 Days</button>
-              <button class="vts-btn" data-type="double">Double Entry</button>
+              <button class="vts-btn active" data-type="service">Service Holder</button>
+              <button class="vts-btn" data-type="business">Business Person</button>
+              <button class="vts-btn" data-type="dependent">Dependents</button>
+              <button class="vts-btn" data-type="minor">Minors</button>
+              <button class="vts-btn" data-type="medical">Medical Visa</button>
             </div>
           </div>
 
@@ -1359,48 +1286,82 @@
           <div class="visa-docs">
             <h4 class="visa-docs-title">📋 Required Documents</h4>
 
-            <div class="vdocs" data-for="thailand-tourist30">
+            <!-- Service Holder Tourist -->
+            <div class="vdocs" data-for="thailand-service">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Service Holder</p>
               <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Passport-size photo (white background, 4×6 cm)</li>
-                <li>Bank statement — last 3 months (min. ৳30,000 balance)</li>
-                <li>Confirmed return flight ticket</li>
-                <li>Hotel booking confirmation</li>
-                <li>NID copy</li>
-                <li>Employment letter or business trade license</li>
+                <li>Scan copy of passport with minimum 07 month validity</li>
+                <li>Two copies 3.5cm × 4.5cm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance (last 6 months)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Last 6 month salary pay slip (if account is not salary account)</li>
+                <li>NOC letter</li>
+                <li>Office ID card</li>
+                <li>Visiting card</li>
               </ul>
             </div>
 
-            <div class="vdocs" data-for="thailand-tourist60" style="display:none">
+            <!-- Business Person Tourist -->
+            <div class="vdocs" data-for="thailand-business" style="display:none">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Business Person</p>
               <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Passport-size photo (white background, 4×6 cm)</li>
-                <li>Bank statement — last 6 months (min. ৳60,000 balance)</li>
-                <li>Confirmed return flight ticket</li>
-                <li>Hotel booking confirmation</li>
-                <li>NID copy</li>
-                <li>Employment letter or business trade license</li>
-                <li>Travel itinerary</li>
+                <li>Scan copy of passport with minimum 07 month validity</li>
+                <li>Two copies 3.5cm × 4.5cm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance (last 6 months)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Updated Trade License (English translated & notarized)</li>
+                <li>NOC on company letterhead pad</li>
+                <li>Three page blank company letterhead pad</li>
+                <li>Business card</li>
               </ul>
             </div>
 
-            <div class="vdocs" data-for="thailand-double" style="display:none">
+            <!-- Dependents -->
+            <div class="vdocs" data-for="thailand-dependent" style="display:none">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Dependents</p>
               <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>2 passport-size photos (white background)</li>
-                <li>Bank statement — last 6 months (min. ৳80,000 balance)</li>
-                <li>Confirmed return flight ticket</li>
-                <li>Hotel bookings for both stays</li>
-                <li>NID copy</li>
-                <li>Detailed travel itinerary</li>
-                <li>Previous Thailand visa (if any) — helps approval</li>
+                <li>Scan copy of passport with minimum 07 month validity</li>
+                <li>Two copies 3.5cm × 4.5cm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance (last 6 months)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Marriage certificate or proof of relationship (English translated & notarized)</li>
               </ul>
             </div>
+
+            <!-- Minors -->
+            <div class="vdocs" data-for="thailand-minor" style="display:none">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Minors</p>
+              <ul>
+                <li>Scan copy of passport with minimum 07 month validity</li>
+                <li>Two copies 3.5cm × 4.5cm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance — last 6 months (cost bearer)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Birth certificate and parental consent (English translated & notarized)</li>
+              </ul>
+            </div>
+
+            <!-- Medical Visa -->
+            <div class="vdocs" data-for="thailand-medical" style="display:none">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Medical Visa — Service Holder / Business</p>
+              <ul>
+                <li>Scan copy of passport with minimum 07 month validity</li>
+                <li>Two copies 3.5cm × 4.5cm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance (last 6 months)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Official invitation/appointment letter from Thai hospital or medical facility</li>
+                <li>Referral letter from local doctor / medical report</li>
+                <li>NOC letter</li>
+                <li>Office ID card / Trade License (for business persons)</li>
+                <li>Visiting card / Business card</li>
+              </ul>
+            </div>
+
           </div>
-
         </div>
       </div><!-- /thailand -->
+      <!-- /thailand -->
 
+      <!-- Malaysia -->
       <!-- Malaysia -->
       <div class="visa-panel" data-panel="malaysia">
         <div class="visa-panel-left">
@@ -1408,22 +1369,23 @@
             <span class="visa-flag-big">🇲🇾</span>
             <div>
               <h3 class="visa-country-name">Malaysia</h3>
-              <p class="visa-country-sub">Kuala Lumpur · Langkawi · Penang</p>
+              <p class="visa-country-sub">Kuala Lumpur · Penang · Langkawi · Sabah</p>
             </div>
           </div>
 
           <div class="visa-type-selector" data-country="malaysia">
-            <p class="vts-label">Select Visa Type:</p>
+            <p class="vts-label">Select Applicant Type:</p>
             <div class="vts-buttons">
-              <button class="vts-btn active" data-type="evisa30">eVisa 30 Days</button>
-              <button class="vts-btn" data-type="single">Single Entry</button>
-              <button class="vts-btn" data-type="multiple">Multiple Entry</button>
+              <button class="vts-btn active" data-type="service">Service Holder</button>
+              <button class="vts-btn" data-type="business">Business Person</button>
+              <button class="vts-btn" data-type="dependent">Dependents</button>
+              <button class="vts-btn" data-type="minor">Minors</button>
             </div>
           </div>
 
           <div class="visa-stats-row">
             <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">3–5 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳2,800+</div><div class="visa-stat-lbl">Visa Fee</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳2,500+</div><div class="visa-stat-lbl">Visa Fee</div></div>
             <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">97%</div><div class="visa-stat-lbl">Approval Rate</div></div>
           </div>
 
@@ -1432,45 +1394,63 @@
           <div class="visa-docs">
             <h4 class="visa-docs-title">📋 Required Documents</h4>
 
-            <div class="vdocs" data-for="malaysia-evisa30">
+            <!-- Service Holder -->
+            <div class="vdocs" data-for="malaysia-service">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Service Holder</p>
               <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Digital passport photo (white background, JPEG)</li>
-                <li>Bank statement — last 3 months</li>
-                <li>Confirmed return flight ticket</li>
-                <li>Hotel booking confirmation</li>
-                <li>NID copy (scanned)</li>
+                <li>Scan copy of passport with minimum 07 month validity</li>
+                <li>Two copies 35mm × 50mm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance (last 6 months)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Last 6 month salary pay slip (if account is not salary account)</li>
+                <li>NOC letter</li>
+                <li>Office ID card</li>
+                <li>Visiting card</li>
               </ul>
             </div>
 
-            <div class="vdocs" data-for="malaysia-single" style="display:none">
+            <!-- Business Person -->
+            <div class="vdocs" data-for="malaysia-business" style="display:none">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Business Person</p>
               <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Passport-size photo (white background)</li>
-                <li>Bank statement — last 3 months (min. ৳25,000)</li>
-                <li>Confirmed return flight ticket</li>
-                <li>Hotel booking confirmation</li>
-                <li>NID copy</li>
-                <li>Employment letter / salary certificate</li>
+                <li>Scan copy of passport with minimum 07 month validity</li>
+                <li>Two copies 35mm × 50mm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance (last 6 months)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Updated Trade License (English translated & notarized)</li>
+                <li>NOC on company letterhead pad</li>
+                <li>Three page blank company letterhead pad</li>
+                <li>Business card</li>
               </ul>
             </div>
 
-            <div class="vdocs" data-for="malaysia-multiple" style="display:none">
+            <!-- Dependents -->
+            <div class="vdocs" data-for="malaysia-dependent" style="display:none">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Dependents</p>
               <ul>
-                <li>Valid passport (min. 12 months validity)</li>
-                <li>Passport-size photo (white background)</li>
-                <li>Bank statement — last 6 months (min. ৳1,00,000)</li>
-                <li>Confirmed flight tickets</li>
-                <li>Previous Malaysia visa (if available)</li>
-                <li>NID copy</li>
-                <li>Employment letter with salary details</li>
-                <li>Business trade license (if self-employed)</li>
+                <li>Scan copy of passport with minimum 07 month validity</li>
+                <li>Two copies 35mm × 50mm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance (last 6 months)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Marriage certificate or proof of relationship (English translated & notarized)</li>
               </ul>
             </div>
+
+            <!-- Minors -->
+            <div class="vdocs" data-for="malaysia-minor" style="display:none">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Minors</p>
+              <ul>
+                <li>Scan copy of passport with minimum 07 month validity</li>
+                <li>Two copies 35mm × 50mm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance — last 6 months (cost bearer)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Birth certificate and parental consent (English translated & notarized)</li>
+              </ul>
+            </div>
+
           </div>
-
         </div>
-      </div><!-- /malaysia -->
+      </div><!-- /malaysia --><!-- /malaysia -->
 
       <!-- Singapore -->
       <div class="visa-panel" data-panel="singapore">
@@ -1479,22 +1459,24 @@
             <span class="visa-flag-big">🇸🇬</span>
             <div>
               <h3 class="visa-country-name">Singapore</h3>
-              <p class="visa-country-sub">Marina Bay · Sentosa · Orchard Road</p>
+              <p class="visa-country-sub">Marina Bay · Sentosa · Orchard · Gardens by the Bay</p>
             </div>
           </div>
 
           <div class="visa-type-selector" data-country="singapore">
-            <p class="vts-label">Select Visa Type:</p>
+            <p class="vts-label">Select Applicant Type:</p>
             <div class="vts-buttons">
-              <button class="vts-btn active" data-type="tourist30">Tourist 30 Days</button>
-              <button class="vts-btn" data-type="multiple">Multiple Entry</button>
+              <button class="vts-btn active" data-type="service">Service Holder</button>
+              <button class="vts-btn" data-type="business">Business Person</button>
+              <button class="vts-btn" data-type="dependent">Dependents</button>
+              <button class="vts-btn" data-type="minor">Minors</button>
             </div>
           </div>
 
           <div class="visa-stats-row">
-            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">7–10 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳5,500+</div><div class="visa-stat-lbl">Visa Fee</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">90%</div><div class="visa-stat-lbl">Approval Rate</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">5–7 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳4,000+</div><div class="visa-stat-lbl">Visa Fee</div></div>
+            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">93%</div><div class="visa-stat-lbl">Approval Rate</div></div>
           </div>
 
           <button class="visa-apply-btn" onclick="applyVisaWA('Singapore', this)">💬 Apply via WhatsApp</button>
@@ -1502,313 +1484,66 @@
           <div class="visa-docs">
             <h4 class="visa-docs-title">📋 Required Documents</h4>
 
-            <div class="vdocs" data-for="singapore-tourist30">
+            <!-- Service Holder -->
+            <div class="vdocs" data-for="singapore-service">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Service Holder</p>
               <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Passport-size photo (white background, 35×45 mm)</li>
-                <li>Bank statement — last 3 months (min. ৳50,000)</li>
-                <li>Confirmed return flight ticket</li>
-                <li>Hotel booking confirmation</li>
-                <li>NID copy</li>
-                <li>Employment letter or business certificate</li>
-                <li>Last 3 months salary slip</li>
+                <li>Original passport with minimum 07 month validity</li>
+                <li>Two copies 35mm × 45mm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance (last 6 months)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Last 6 month salary pay slip (if account is not salary account)</li>
+                <li>NOC letter</li>
+                <li>Office ID card</li>
+                <li>Visiting card</li>
               </ul>
             </div>
 
-            <div class="vdocs" data-for="singapore-multiple" style="display:none">
+            <!-- Business Person -->
+            <div class="vdocs" data-for="singapore-business" style="display:none">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Business Person</p>
               <ul>
-                <li>Valid passport (min. 12 months validity)</li>
-                <li>Passport-size photo (white background, 35×45 mm)</li>
-                <li>Bank statement — last 6 months (min. ৳1,50,000)</li>
-                <li>Confirmed flight tickets</li>
-                <li>Previous Singapore visa copy</li>
-                <li>NID copy</li>
-                <li>Employment letter with designation &amp; salary</li>
-                <li>Last 6 months salary slips</li>
-                <li>Income Tax Return (if available)</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div><!-- /singapore -->
-
-      <!-- Saudi -->
-      <div class="visa-panel" data-panel="saudi">
-        <div class="visa-panel-left">
-          <div class="visa-country-header">
-            <span class="visa-flag-big">🇸🇦</span>
-            <div>
-              <h3 class="visa-country-name">Saudi Arabia</h3>
-              <p class="visa-country-sub">Makkah · Madinah · Riyadh · Jeddah</p>
-            </div>
-          </div>
-
-          <div class="visa-type-selector" data-country="saudi">
-            <p class="vts-label">Select Visa Type:</p>
-            <div class="vts-buttons">
-              <button class="vts-btn active" data-type="umrah">Umrah Visa</button>
-              <button class="vts-btn" data-type="tourist">Tourist Visa</button>
-              <button class="vts-btn" data-type="work">Work Visa</button>
-            </div>
-          </div>
-
-          <div class="visa-stats-row">
-            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">5–10 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳6,000+</div><div class="visa-stat-lbl">Visa Fee</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">96%</div><div class="visa-stat-lbl">Approval Rate</div></div>
-          </div>
-
-          <button class="visa-apply-btn" onclick="applyVisaWA('Saudi Arabia', this)">💬 Apply via WhatsApp</button>
-
-          <div class="visa-docs">
-            <h4 class="visa-docs-title">📋 Required Documents</h4>
-
-            <div class="vdocs" data-for="saudi-umrah">
-              <ul>
-                <li>Valid passport (min. 6 months validity, at least 2 blank pages)</li>
-                <li>Passport-size photo (white background)</li>
-                <li>NID copy</li>
-                <li>Mahram document (for females without husband)</li>
-                <li>Meningitis vaccination certificate</li>
-                <li>Confirmed flight ticket to Jeddah/Madinah</li>
-                <li>Hotel booking near Haram</li>
-                <li>Travel agency authorization letter</li>
-              </ul>
-            </div>
-
-            <div class="vdocs" data-for="saudi-tourist" style="display:none">
-              <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Passport-size photo (white background)</li>
-                <li>Bank statement — last 3 months</li>
-                <li>Confirmed return flight ticket</li>
-                <li>Hotel booking confirmation</li>
-                <li>NID copy</li>
-                <li>Travel itinerary</li>
-              </ul>
-            </div>
-
-            <div class="vdocs" data-for="saudi-work" style="display:none">
-              <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Passport-size photo (white background)</li>
-                <li>Iqama / work permit from Saudi employer</li>
-                <li>Employment contract (Arabic + English)</li>
-                <li>Medical fitness certificate</li>
-                <li>Police clearance certificate</li>
-                <li>Educational certificates (attested)</li>
-                <li>NID copy</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div><!-- /saudi -->
-
-      <!-- Maldives -->
-      <div class="visa-panel" data-panel="maldives">
-        <div class="visa-panel-left">
-          <div class="visa-country-header">
-            <span class="visa-flag-big">🇲🇻</span>
-            <div>
-              <h3 class="visa-country-name">Maldives</h3>
-              <p class="visa-country-sub">Malé · Maafushi · Baa Atoll</p>
-            </div>
-          </div>
-
-          <div class="visa-type-selector" data-country="maldives">
-            <p class="vts-label">Select Visa Type:</p>
-            <div class="vts-buttons">
-              <button class="vts-btn active" data-type="onarrival">On Arrival 30 Days</button>
-            </div>
-          </div>
-
-          <div class="visa-stats-row">
-            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">On Arrival</div><div class="visa-stat-lbl">Processing Time</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">Free</div><div class="visa-stat-lbl">Visa Fee</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">100%</div><div class="visa-stat-lbl">Approval Rate</div></div>
-          </div>
-
-          <button class="visa-apply-btn" onclick="applyVisaWA('Maldives', this)">💬 Apply via WhatsApp</button>
-
-          <div class="visa-docs">
-            <h4 class="visa-docs-title">📋 Required Documents</h4>
-            <div class="vdocs" data-for="maldives-onarrival">
-              <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Confirmed return flight ticket</li>
-                <li>Hotel / resort booking confirmation</li>
-                <li>Proof of sufficient funds (bank card or cash)</li>
-                <li>Filled immigration arrival card</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div><!-- /maldives -->
-
-      <!-- India -->
-      <div class="visa-panel" data-panel="india">
-        <div class="visa-panel-left">
-          <div class="visa-country-header">
-            <span class="visa-flag-big">🇮🇳</span>
-            <div>
-              <h3 class="visa-country-name">India</h3>
-              <p class="visa-country-sub">Delhi · Mumbai · Kolkata · Chennai</p>
-            </div>
-          </div>
-
-          <div class="visa-type-selector" data-country="india">
-            <p class="vts-label">Select Visa Type:</p>
-            <div class="vts-buttons">
-              <button class="vts-btn active" data-type="tourist">Tourist eVisa</button>
-              <button class="vts-btn" data-type="medical">Medical Visa</button>
-              <button class="vts-btn" data-type="business">Business Visa</button>
-            </div>
-          </div>
-
-          <div class="visa-stats-row">
-            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">3–5 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳2,500+</div><div class="visa-stat-lbl">Visa Fee</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">94%</div><div class="visa-stat-lbl">Approval Rate</div></div>
-          </div>
-
-          <button class="visa-apply-btn" onclick="applyVisaWA('India', this)">💬 Apply via WhatsApp</button>
-
-          <div class="visa-docs">
-            <h4 class="visa-docs-title">📋 Required Documents</h4>
-
-            <div class="vdocs" data-for="india-tourist">
-              <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Digital photo (white background, JPEG, min. 10KB)</li>
-                <li>Bank statement — last 3 months</li>
-                <li>Confirmed return flight ticket</li>
-                <li>Hotel booking confirmation</li>
-                <li>NID copy</li>
-              </ul>
-            </div>
-
-            <div class="vdocs" data-for="india-medical" style="display:none">
-              <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Digital photo (white background, JPEG)</li>
-                <li>Doctor referral letter from Bangladesh</li>
-                <li>Hospital appointment letter from India</li>
-                <li>Bank statement showing treatment funds</li>
-                <li>NID copy</li>
-                <li>Attendant's documents (if applicable)</li>
-              </ul>
-            </div>
-
-            <div class="vdocs" data-for="india-business" style="display:none">
-              <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Digital photo (white background, JPEG)</li>
-                <li>Business invitation letter from Indian company</li>
-                <li>Bank statement — last 6 months</li>
-                <li>Company trade license (Bangladesh)</li>
-                <li>NID copy</li>
+                <li>Original passport with minimum 07 month validity</li>
+                <li>Two copies 35mm × 45mm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance (last 6 months)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Updated Trade License (English translated & notarized)</li>
+                <li>NOC on company letterhead pad</li>
+                <li>Three page blank company letterhead pad</li>
                 <li>Business card</li>
               </ul>
             </div>
-          </div>
 
-        </div>
-      </div><!-- /india -->
-
-      <!-- Turkey -->
-      <div class="visa-panel" data-panel="turkey">
-        <div class="visa-panel-left">
-          <div class="visa-country-header">
-            <span class="visa-flag-big">🇹🇷</span>
-            <div>
-              <h3 class="visa-country-name">Turkey</h3>
-              <p class="visa-country-sub">Istanbul · Ankara · Cappadocia · Antalya</p>
-            </div>
-          </div>
-
-          <div class="visa-type-selector" data-country="turkey">
-            <p class="vts-label">Select Visa Type:</p>
-            <div class="vts-buttons">
-              <button class="vts-btn active" data-type="tourist30">Tourist eVisa 30 Days</button>
-              <button class="vts-btn" data-type="multiple">Multiple Entry</button>
-            </div>
-          </div>
-
-          <div class="visa-stats-row">
-            <div class="visa-stat"><div class="visa-stat-icon">⏱️</div><div class="visa-stat-val">3–7 Days</div><div class="visa-stat-lbl">Processing Time</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">💰</div><div class="visa-stat-val">৳4,000+</div><div class="visa-stat-lbl">Visa Fee</div></div>
-            <div class="visa-stat"><div class="visa-stat-icon">✅</div><div class="visa-stat-val">93%</div><div class="visa-stat-lbl">Approval Rate</div></div>
-          </div>
-
-          <button class="visa-apply-btn" onclick="applyVisaWA('Turkey', this)">💬 Apply via WhatsApp</button>
-
-          <div class="visa-docs">
-            <h4 class="visa-docs-title">📋 Required Documents</h4>
-
-            <div class="vdocs" data-for="turkey-tourist30">
+            <!-- Dependents -->
+            <div class="vdocs" data-for="singapore-dependent" style="display:none">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Dependents</p>
               <ul>
-                <li>Valid passport (min. 6 months validity)</li>
-                <li>Passport-size photo (white background)</li>
-                <li>Bank statement — last 3 months (min. ৳40,000)</li>
-                <li>Confirmed return flight ticket</li>
-                <li>Hotel booking confirmation</li>
-                <li>NID copy</li>
-                <li>Employment letter or business certificate</li>
+                <li>Original passport with minimum 07 month validity</li>
+                <li>Two copies 35mm × 45mm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance (last 6 months)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Marriage certificate or proof of relationship (English translated & notarized)</li>
               </ul>
             </div>
 
-            <div class="vdocs" data-for="turkey-multiple" style="display:none">
+            <!-- Minors -->
+            <div class="vdocs" data-for="singapore-minor" style="display:none">
+              <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Minors</p>
               <ul>
-                <li>Valid passport (min. 12 months validity)</li>
-                <li>Passport-size photo (white background)</li>
-                <li>Bank statement — last 6 months (min. ৳1,00,000)</li>
-                <li>Confirmed flight tickets</li>
-                <li>Previous Turkey visa or Schengen/US visa (helps approval)</li>
-                <li>NID copy</li>
-                <li>Employment letter with salary details</li>
-                <li>Travel itinerary</li>
+                <li>Original passport with minimum 07 month validity</li>
+                <li>Two copies 35mm × 45mm photo — white background</li>
+                <li>Bank statement with min. 1 Lac Tk closing balance — last 6 months (cost bearer)</li>
+                <li>Bank solvency — balance must match statement</li>
+                <li>Birth certificate and parental consent (English translated & notarized)</li>
               </ul>
             </div>
+
           </div>
-
         </div>
-      </div><!-- /turkey -->
+      </div><!-- /singapore --><!-- /singapore -->
 
-    </div><!-- /.visa-panels -->
-  </div><!-- /.container -->
-</section>
-
-<!-- 
-     STATS
- -->
-<section id="stats" aria-label="Our achievements">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-item anim">
-        <div class="stat-icon">✈️</div>
-        <span class="count" data-to="1250">0+</span>
-        <div class="stat-label">Happy Travelers</div>
-      </div>
-      <div class="stat-item anim" style="transition-delay:.1s">
-        <div class="stat-icon">🌍</div>
-        <span class="count" data-to="45">0+</span>
-        <div class="stat-label">Destinations Covered</div>
-      </div>
-      <div class="stat-item anim" style="transition-delay:.2s">
-        <div class="stat-icon">📦</div>
-        <span class="count" data-to="30">0+</span>
-        <div class="stat-label">Tour Packages</div>
-      </div>
-      <div class="stat-item anim" style="transition-delay:.3s">
-        <div class="stat-icon">🏆</div>
-        <span class="count" data-to="5">0+</span>
-        <div class="stat-label">Years of Excellence</div>
-      </div>
-    </div>
-  </div>
+      
+     
 </section>
 
 

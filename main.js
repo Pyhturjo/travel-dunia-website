@@ -388,6 +388,11 @@ document.querySelectorAll('.visa-tab').forEach(function(tab) {
   });
 });
 
+/* ── Activate first visa tab on load ── */
+document.addEventListener('DOMContentLoaded', function() {
+  var firstTab = document.querySelector('.visa-tab');
+  if (firstTab) firstTab.click();
+});
 /* ── Visa type selector ── */
 document.querySelectorAll('.vts-btn').forEach(function(btn) {
   btn.addEventListener('click', function() {
@@ -416,29 +421,50 @@ function applyVisaWA(country, btn) {
   var docItems = [];
   if (activeDoc) {
     activeDoc.querySelectorAll('li').forEach(function(li) {
-      docItems.push('  • ' + li.textContent.trim());
+      docItems.push('  - ' + li.textContent.trim());
     });
   }
 
   var lines = [
-    'Hello Travel Dunia! 👋',
+    'Hello Travel Dunia!',
     'I would like to apply for a visa. Please assist me.',
     '',
-    '🌍 *Visa Application Details*',
-    '━━━━━━━━━━━━━━━━━━━━',
-    '🏳️ *Country:* ' + country,
-    '📋 *Visa Type:* ' + visaType,
+    '*VISA APPLICATION DETAILS*',
+    '================================',
+    '*Country:* ' + country,
+    '*Visa Type:* ' + visaType,
     '',
-    '📄 *Required documents I need to prepare:*',
+    '*Required documents I need to prepare:*',
   ].concat(docItems).concat([
     '',
-    '━━━━━━━━━━━━━━━━━━━━',
+    '================================',
     'Please confirm the current fee, processing time, and next steps. Thank you!'
   ]);
 
   var url = 'https://wa.me/8801878072988?text=' + encodeURIComponent(lines.join('\n'));
   window.open(url, '_blank');
 }
+
+
+// The message will now look like this on all devices:
+
+// Hello Travel Dunia!
+// I would like to apply for a visa. Please assist me.
+
+// *VISA APPLICATION DETAILS*
+// ================================
+// *Country:* Thailand
+// *Visa Type:* Minors
+
+// *Required documents I need to prepare:*
+//   - Scan copy of passport with minimum 07 month validity
+//   - Two copies 3.5cm × 4.5cm photo — white background
+//   - Bank statement with min. 1 Lac Tk closing balance
+//   - Bank solvency — balance must match statement
+//   - Birth certificate and parental consent
+
+// ================================
+// Please confirm the current fee, processing time, and next steps. Thank you!
 
 
 /* ── Video sound toggle ── */
