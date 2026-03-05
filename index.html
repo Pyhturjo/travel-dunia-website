@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
+
+
   <!-- LOADING SCREEN -->
 <div id="loader">
   <div class="loader-inner">
@@ -26,9 +30,8 @@
 </div>
   
 
-<!--
-     NAVIGATION
- -->
+<!-- NAVI-->
+
 <header id="siteHeader">
   <div class="container">
     <div class="nav-inner">
@@ -63,10 +66,11 @@
 </header>
 
 
-<!-- 
-     HERO — Full-screen slider + search card
- -->
+
+<!-- HERO — Full-screen slider + search card -->
 <section id="hero" aria-label="Hero">
+
+
 
   <!-- Background slides -->
   <div class="hero-slides-wrap" aria-hidden="true">
@@ -79,11 +83,16 @@
     </div>
   </div>
 
-  <!-- Prev / Next arrows -->
+
+
+  <!-- Prev/Next arrows -->
   <button class="hero-nav-btn" id="hPrev" aria-label="Previous slide">&#8592;</button>
   <button class="hero-nav-btn" id="hNext" aria-label="Next slide">&#8594;</button>
 
-  <!-- positioned ABOVE the search card -->
+
+
+
+  <!-- positioned above -->
   <div class="hero-dots" role="tablist" aria-label="Slide indicators">
     <div class="hd active" data-i="0" role="tab" aria-label="Slide 1"></div>
     <div class="hd"        data-i="1" role="tab" aria-label="Slide 2"></div>
@@ -91,6 +100,8 @@
     <div class="hd"        data-i="3" role="tab" aria-label="Slide 4"></div>
     <div class="hd"        data-i="4" role="tab" aria-label="Slide 5"></div>
   </div>
+
+
 
   <!-- Hero text content -->
   <div class="hero-content">
@@ -112,7 +123,9 @@
     </div>
   </div>
 
-  <!-- Search card — floats over the next section -->
+
+
+  <!-- Search card -->
   <div class="hero-search">
     <div class="container">
       <form class="search-card" id="searchForm" role="search">
@@ -162,12 +175,16 @@
     </div>
   </div>
 
-</section><!-- /#hero -->
+</section>
+
+
 
 <!-- VIDEO BANNER -->
+
+
 <section id="video-banner">
   <video id="tdVideo" autoplay muted loop playsinline poster="./images/hero1.webp">
-    <source src="./images/TD_Video.mp4" type="video/mp4">
+    <source src="./videos/TD_Video.mp4" type="video/mp4">
   </video>
   <div class="vb-overlay">
     <a href="#contact" class="btn btn-primary">Book Your Trip</a>
@@ -176,12 +193,20 @@
 </section>
 
 
-<!--
-     WHY CHOOSE US
- -->
+
+
+
+<!--WHY CHOOSE US-->
+
+
+
 <section id="why" aria-labelledby="why-title">
   <div class="container">
     <div class="why-grid">
+
+
+
+
 
       <!-- Left: Image -->
       <div class="why-image anim">
@@ -195,6 +220,10 @@
           </div>
         </div>
       </div>
+
+
+
+
 
       <!-- Right: Content -->
       <div class="anim" style="transition-delay:.15s">
@@ -239,9 +268,10 @@
 </section>
 
 
-<!-- 
-     TOURS / HOT DEALS
--->
+
+
+<!-- TOURS -->
+
 <section id="tours" class="section-pad" aria-labelledby="tours-title">
   <div class="container">
 
@@ -268,10 +298,14 @@
       </div>
       <a href="#contact" class="btn btn-primary">View All Packages</a>
     </div>
-
     <div class="tours-grid">
 
+
+
+
       <!-- Card 1: Maldives Luxury -->
+
+
       <article class="tc anim" data-dest="maldives">
         <div class="tc-img">
           <img src="./images/Maldives.webp" alt="Maldives Overwater Bungalow" width="400" height="240" loading="lazy">
@@ -292,7 +326,11 @@
         </div>
       </article>
 
+
+
       <!-- Card 2: Thailand -->
+
+
       <article class="tc anim" data-dest="thailand" style="transition-delay:.08s">
         <div class="tc-img">
           <img src="./images/Thailand.webp" alt="Bangkok Thailand Temple" width="400" height="240" loading="lazy">
@@ -313,7 +351,11 @@
         </div>
       </article>
 
+
+
       <!-- Card 3: Dubai Glam -->
+
+
       <article class="tc anim" data-dest="dubai" style="transition-delay:.16s">
         <div class="tc-img">
           <img src="./images/Dubai.webp" alt="Dubai Skyline" width="400" height="240" loading="lazy">
@@ -334,7 +376,11 @@
         </div>
       </article>
 
+
+
       <!-- Card 4: Malaysia -->
+
+
       <article class="tc anim" data-dest="malaysia" style="transition-delay:.04s">
         <div class="tc-img">
           <img src="./images/Kuala-lumpur.webp" alt="Kuala Lumpur Skyline" width="400" height="240" loading="lazy">
@@ -355,7 +401,12 @@
         </div>
       </article>
 
+
+
+
       <!-- Card 5: Singapore -->
+
+
       <article class="tc anim" data-dest="singapore" style="transition-delay:.12s">
         <div class="tc-img">
           <img src="./images/Singapore.webp" alt="Singapore Gardens by the Bay" width="400" height="240" loading="lazy">
@@ -376,7 +427,12 @@
         </div>
       </article>
 
+
+
+
       <!-- Card 8: Maldives Honeymoon -->
+
+
       <article class="tc anim" data-dest="maldives" style="transition-delay:.16s">
         <div class="tc-img">
           <img src="./images/maldivs.webp" alt="Maldives Honeymoon Beach" width="400" height="240" loading="lazy">
@@ -397,7 +453,12 @@
         </div>
       </article>
 
+
+
+
       <!-- Card 9: Dubai Desert -->
+
+
       <article class="tc anim" data-dest="dubai" style="transition-delay:.24s">
         <div class="tc-img">
           <img src="./images/Dubai_Desert.webp" alt="Dubai Desert Safari" width="400" height="240" loading="lazy">
@@ -419,7 +480,12 @@
       </article>
 
 
+
+
+
             <!-- India Cards -->
+
+
       <article class="tc anim" data-dest="india">
         <div class="tc-img">
           <img src="./images/Kashmir.webp" alt="Kashmir Tour" width="400" height="240" loading="lazy">
@@ -532,7 +598,12 @@
         </div>
       </article>
 
+
+
+
     <!-- Saudi Arabia -->
+
+
     <article class="tc anim" data-dest="saudi">
       <div class="tc-img">
         <img src="./images/makkah.webp" alt="Makkah Umrah" width="400" height="240" loading="lazy">
@@ -565,7 +636,12 @@
       </div>
     </article>
 
+
+
+
     <!-- Nepal -->
+
+
     <article class="tc anim" data-dest="nepal">
       <div class="tc-img">
         <img src="./images/kathmandu.webp" alt="Kathmandu Nepal" width="400" height="240" loading="lazy">
@@ -598,7 +674,12 @@
       </div>
     </article>
 
+
+
+
     <!-- Bhutan -->
+
+
     <article class="tc anim" data-dest="bhutan">
       <div class="tc-img">
         <img src="./images/bhutan.webp" alt="Bhutan Tiger Nest" width="400" height="240" loading="lazy">
@@ -631,7 +712,12 @@
       </div>
     </article>
 
+
+
+
     <!-- Sri Lanka -->
+
+
     <article class="tc anim" data-dest="srilanka">
       <div class="tc-img">
         <img src="./images/srilanka.webp" alt="Sri Lanka" width="400" height="240" loading="lazy">
@@ -664,7 +750,13 @@
       </div>
     </article>
 
+
+
+
+
     <!-- Cambodia -->
+
+
     <article class="tc anim" data-dest="cambodia">
       <div class="tc-img">
         <img src="./images/angkorwat.webp" alt="Angkor Wat Cambodia" width="400" height="240" loading="lazy">
@@ -697,7 +789,12 @@
       </div>
     </article>
 
+
+
+
     <!-- Turkey -->
+
+
     <article class="tc anim" data-dest="turkey">
       <div class="tc-img">
         <img src="./images/istanbul.webp" alt="Istanbul Turkey" width="400" height="240" loading="lazy">
@@ -730,7 +827,12 @@
       </div>
     </article>
 
+
+
+
     <!-- Egypt -->
+
+
     <article class="tc anim" data-dest="egypt">
       <div class="tc-img">
         <img src="./images/pyramids.webp" alt="Egypt Pyramids" width="400" height="240" loading="lazy">
@@ -764,7 +866,8 @@
     </article>
 
 
-        </div>
+
+  </div>
         
         
         <!-- /.tours-grid -->
@@ -782,12 +885,14 @@
 </section>
 
 
-<!-- 
-     AIRLINE
- -->
-<!--
-     DOMESTIC FLIGHTS
--->
+<!--AIRLINE-->
+
+
+
+
+<!--DOMESTIC FLIGHTS-->
+
+
 <section id="domestic" aria-labelledby="domestic-title">
   <div class="container">
     <div class="domestic-head anim">
@@ -846,9 +951,11 @@
   </div>
 </section>
 
-<!--
-     FLIGHT SEARCH
--->
+
+
+<!--FLIGHT SEARCH-->
+
+
 <section id="flights" aria-labelledby="flights-title">
   <div class="flight-hero">
     <div class="container">
@@ -1223,15 +1330,11 @@
     </div>
   </div>
 </section>
-<!--
-     VISA SERVICES
--->
-<!--
-     VISA SERVICES
--->
-<!--
-     VISA SERVICES
--->
+
+
+
+<!--VISA SERVICES-->
+
 <section id="visa" aria-labelledby="visa-title">
   <div class="container">
 
@@ -1242,6 +1345,7 @@
     </div>
 
     <!-- Country Tabs -->
+
     <div class="visa-tabs" role="tablist">
       <button class="visa-tab active" data-country="thailand" role="tab">🇹🇭 Thailand</button>
       <button class="visa-tab" data-country="malaysia" role="tab">🇲🇾 Malaysia</button>
@@ -1249,12 +1353,14 @@
     </div>
 
     <!-- Visa Panels -->
+
     <div class="visa-panels">
 
       
 
       <!-- Thailand -->
-       <div class="visa-panel" data-panel="thailand">
+
+       <div class="visa-panel active" data-panel="thailand">
         <div class="visa-panel-left">
           <div class="visa-country-header">
             <span class="visa-flag-big">🇹🇭</span>
@@ -1286,7 +1392,10 @@
           <div class="visa-docs">
             <h4 class="visa-docs-title">📋 Required Documents</h4>
 
+
+
             <!-- Service Holder Tourist -->
+
             <div class="vdocs" data-for="thailand-service">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Service Holder</p>
               <ul>
@@ -1302,6 +1411,7 @@
             </div>
 
             <!-- Business Person Tourist -->
+
             <div class="vdocs" data-for="thailand-business" style="display:none">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Business Person</p>
               <ul>
@@ -1317,6 +1427,7 @@
             </div>
 
             <!-- Dependents -->
+
             <div class="vdocs" data-for="thailand-dependent" style="display:none">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Dependents</p>
               <ul>
@@ -1329,6 +1440,7 @@
             </div>
 
             <!-- Minors -->
+
             <div class="vdocs" data-for="thailand-minor" style="display:none">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Minors</p>
               <ul>
@@ -1341,6 +1453,7 @@
             </div>
 
             <!-- Medical Visa -->
+
             <div class="vdocs" data-for="thailand-medical" style="display:none">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Medical Visa — Service Holder / Business</p>
               <ul>
@@ -1358,11 +1471,13 @@
 
           </div>
         </div>
-      </div><!-- /thailand -->
-      <!-- /thailand -->
+      </div>
+
+
 
       <!-- Malaysia -->
-      <!-- Malaysia -->
+
+
       <div class="visa-panel" data-panel="malaysia">
         <div class="visa-panel-left">
           <div class="visa-country-header">
@@ -1394,7 +1509,9 @@
           <div class="visa-docs">
             <h4 class="visa-docs-title">📋 Required Documents</h4>
 
+
             <!-- Service Holder -->
+
             <div class="vdocs" data-for="malaysia-service">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Service Holder</p>
               <ul>
@@ -1410,6 +1527,7 @@
             </div>
 
             <!-- Business Person -->
+
             <div class="vdocs" data-for="malaysia-business" style="display:none">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Business Person</p>
               <ul>
@@ -1425,6 +1543,7 @@
             </div>
 
             <!-- Dependents -->
+
             <div class="vdocs" data-for="malaysia-dependent" style="display:none">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Dependents</p>
               <ul>
@@ -1437,6 +1556,7 @@
             </div>
 
             <!-- Minors -->
+
             <div class="vdocs" data-for="malaysia-minor" style="display:none">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Minors</p>
               <ul>
@@ -1450,9 +1570,11 @@
 
           </div>
         </div>
-      </div><!-- /malaysia --><!-- /malaysia -->
+      </div>
+
 
       <!-- Singapore -->
+
       <div class="visa-panel" data-panel="singapore">
         <div class="visa-panel-left">
           <div class="visa-country-header">
@@ -1485,6 +1607,7 @@
             <h4 class="visa-docs-title">📋 Required Documents</h4>
 
             <!-- Service Holder -->
+
             <div class="vdocs" data-for="singapore-service">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Service Holder</p>
               <ul>
@@ -1500,6 +1623,7 @@
             </div>
 
             <!-- Business Person -->
+
             <div class="vdocs" data-for="singapore-business" style="display:none">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Business Person</p>
               <ul>
@@ -1515,6 +1639,7 @@
             </div>
 
             <!-- Dependents -->
+
             <div class="vdocs" data-for="singapore-dependent" style="display:none">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Dependents</p>
               <ul>
@@ -1527,6 +1652,7 @@
             </div>
 
             <!-- Minors -->
+             
             <div class="vdocs" data-for="singapore-minor" style="display:none">
               <p style="font-size:.78rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px">Tourist Visa — Minors</p>
               <ul>
@@ -1540,16 +1666,15 @@
 
           </div>
         </div>
-      </div><!-- /singapore --><!-- /singapore -->
+      </div>
 
       
-     
 </section>
 
 
-<!-- 
-     TESTIMONIALS
- -->
+<!-- TESTIMONIALS-->
+
+
 <section id="testimonials" class="section-pad" aria-labelledby="testi-title">
   <div class="container">
     <div class="testi-head">
@@ -1612,14 +1737,16 @@
 </section>
 
 
-<!-- 
-     CONTACT / BOOK NOW
- -->
+<!-- CONTACT / BOOK NOW-->
+
+
 <section id="contact" class="section-pad" aria-labelledby="contact-title">
   <div class="container">
     <div class="contact-grid">
 
       <!-- Left: Info -->
+
+
       <div class="anim">
         <div class="tag">✦ Get In Touch</div>
         <h2 id="contact-title">Book Your Dream<br>Trip Today</h2>
@@ -1647,7 +1774,11 @@
     House# 16 (1st Floor), Road 4, Block F, Banani, Dhaka- 1213</div>
   </div>
 </div>
+
+
 <!-- Google Map -->
+
+
 <div class="contact-map">
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.6!2d90.4019!3d23.7942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sHouse+16+Road+4+Block+F+Banani+Dhaka!5e0!3m2!1sen!2sbd!4v1"
@@ -1673,7 +1804,9 @@
         </div>
       </div>
 
+      
       <!-- Right: Form -->
+
       <div class="contact-form anim" style="transition-delay:.15s">
         <h3>Send Us a Message</h3>
         <form id="contactForm" novalidate>
@@ -1725,9 +1858,9 @@
 </section>
 
 
-<!-- 
-     FAQ
- -->
+<!-- FAQ-->
+
+
 <section id="faq" aria-labelledby="faq-title">
   <div class="container">
     <div class="faq-inner">
@@ -1768,9 +1901,9 @@
 </section>
 
 
-<!-- 
-     FOOTER
- -->
+<!-- FOOTER-->
+
+
 <footer role="contentinfo">
   <div class="container">
     <div class="footer-grid">
@@ -1788,9 +1921,11 @@
         <a href="#hero">Home</a>
         <a href="#why">About Us</a>
         <a href="#tours">Tour Packages</a>
-        <a href="#airlines">Airlines</a
-        <a href="#contact">Book Now</a>
+        <a href="#airlines">Airlines</a>
+        <a href="#contact">Book Now </a>
       </div>
+
+
       <div class="footer-col">
         <h4>Destinations</h4>
         <a href="#tours">Maldives</a>
@@ -1806,6 +1941,7 @@
         <a href="#tours">Turkey</a>
         <a href="#tours">Egypt</a>
       </div>
+
       <div class="footer-col">
         <h4>Services</h4>
         <a href="#contact">Tour Packages</a>
@@ -1816,6 +1952,8 @@
         <a href="#contact">Group Tours</a>
       </div>
     </div>
+
+
     <div class="footer-bottom">
       <div>&copy; <script>document.write(new Date().getFullYear())</script> Travel Dunia. All rights reserved. Made with ❤️ in Bangladesh.</div>
 <div class="dev-credit">
@@ -1827,14 +1965,18 @@
       <div class="footer-bottom-links">
       </div>
     </div>
+
   </div>
+  
 </footer>
 
 
-<!--
-     STICKY  BUTTON
- -->
+<!--STICKY  BUTTON-->
+
+
 <!-- Floating Contact Stack -->
+
+
 <div id="float-stack">
 
   <a href="tel:+8801878072988" class="float-phone" aria-label="Hotline">
@@ -1888,6 +2030,8 @@
 
 
 <!-- Mobile Bottom Bar -->
+
+
 <div class="mob-bar" id="mobBar">
   <a href="tel:+8801878072988" class="mb-btn">
     <span class="mb-label">Hotline</span>
@@ -1904,6 +2048,8 @@
 </div>
 
 <!-- WHATSAPP POPUP -->
+
+
 <div class="wa-popup" id="waPopup">
   <button class="wa-popup-close" onclick="closeWaPopup()">✕</button>
   <div class="wa-popup-header">
@@ -1926,13 +2072,23 @@
 
 
 <!-- Scroll to top -->
+
+
 <button id="stt" aria-label="Scroll to top" title="Back to top">↑</button>
 
 <!-- Toast notification -->
+
+
 <div id="toast" role="status" aria-live="polite"></div>
 
 <!-- ════ SCRIPTS ════ -->
+
+
 <script src="main.js"></script>
 
+
+
 </body>
+
+
 </html>

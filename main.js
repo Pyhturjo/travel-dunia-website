@@ -1,10 +1,9 @@
-/* ============================================================
-   TRAVEL DUNIA — main.js  (v2 — fixed)
-   ============================================================ */
 (function () {
   'use strict';
 
   /* ── Smooth scroll ── */
+
+
   function smoothScrollTo(id) {
     var cleanId = id.startsWith('#') ? id.slice(1) : id;
     if (!cleanId) { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
@@ -32,7 +31,10 @@
     }
   });
 
+
   /* ── Header sticky ── */
+
+
   function initHeader() {
     var hdr = document.getElementById('siteHeader');
     var stt = document.getElementById('stt');
@@ -46,6 +48,8 @@
   }
 
   /* ── Burger menu ── */
+
+
   function resetBurger() {
     var b = document.getElementById('burger');
     if (!b) return;
@@ -76,7 +80,11 @@
     });
   }
 
+
+
   /* ── Hero slider ── */
+
+
   function initHero() {
     var wrapper = document.getElementById('heroSlides');
     if (!wrapper) return;
@@ -107,7 +115,7 @@
 
 
     // Touch swipe
-    var tx = 0;
+    
     wrapper.addEventListener('touchstart', function(e){ tx = e.touches[0].clientX; }, { passive: true });
     wrapper.addEventListener('touchend', function(e){
       var diff = tx - e.changedTouches[0].clientX;
@@ -115,7 +123,10 @@
     });
   }
 
+
   /* ── Tour filters ── */
+
+
   function initFilters() {
     var chips    = Array.from(document.querySelectorAll('.fchip'));
     var cards    = Array.from(document.querySelectorAll('.tc[data-dest]'));
@@ -145,7 +156,10 @@
     });
   }
 
+
   /* ── Hero search ── */
+
+
   function initSearch() {
     var form = document.getElementById('searchForm');
     if (!form) return;
@@ -167,7 +181,12 @@
     });
   }
 
+
+
+
   /* ── Testimonials slider ── */
+
+
   function initTestimonials() {
     var track = document.getElementById('testiTrack');
     if (!track) return;
@@ -187,7 +206,11 @@
       cards.forEach(function(c) {
         c.style.flex = '0 0 calc(' + pct + '% - ' + (gap * (vis - 1) / vis) + 'px)';
       });
-      // Use pixel offset calculation for reliability
+
+
+      // Use pixel offset calculation
+
+
       var cardEl    = cards[0];
       var cardWidth = cardEl ? (cardEl.getBoundingClientRect().width + gap) : 0;
       track.style.transform = 'translateX(-' + (current * cardWidth) + 'px)';
@@ -210,7 +233,12 @@
     });
   }
 
+
+
   /* ── Stat counters ── */
+
+
+
   function initCounters() {
     var els = document.querySelectorAll('.count[data-to]');
     if (!els.length) return;
@@ -244,7 +272,12 @@
     }
   }
 
+
+
+
   /* ── Scroll-reveal animations ── */
+
+
   function initAnimations() {
     var animEls = document.querySelectorAll('.anim');
 
@@ -257,6 +290,7 @@
       animEls.forEach(function(el) { el.classList.add('in'); });
       return;
     }
+
 
     var ob = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
@@ -278,7 +312,11 @@
     });
   }
 
+
+
   /* ── Scroll to top ── */
+
+
   function initScrollTop() {
     var stt = document.getElementById('stt');
     if (stt) stt.addEventListener('click', function() {
@@ -286,7 +324,11 @@
     });
   }
 
+
+
   /* ── Contact form ── */
+
+
  function initContactForm() {
     var form = document.getElementById('contactForm');
     if (!form) return;
@@ -335,7 +377,11 @@
     });
   }
 
+
+
   /* ── FAQ accordion ── */
+
+  
   function initFAQ() {
     document.querySelectorAll('.faq-item').forEach(function(item) {
       var q = item.querySelector('.faq-q');
@@ -348,7 +394,11 @@
     });
   }
 
+
+
   /* ── Toast ── */
+
+
   function showToast(msg) {
     var t = document.getElementById('toast');
     if (!t) return;
@@ -359,7 +409,11 @@
   }
   window.showToast = showToast;
 
+
+
   /* ── INIT ── */
+
+
   document.addEventListener('DOMContentLoaded', function() {
     initHeader();
     initBurger();
@@ -375,8 +429,11 @@
   });
 
 })();
+
+
 /* ── Visa tabs ── */
-/* ── Visa tabs ── */
+
+
 document.querySelectorAll('.visa-tab').forEach(function(tab) {
   tab.addEventListener('click', function() {
     var country = tab.getAttribute('data-country');
@@ -388,12 +445,20 @@ document.querySelectorAll('.visa-tab').forEach(function(tab) {
   });
 });
 
+
+
 /* ── Activate first visa tab on load ── */
+
+
 document.addEventListener('DOMContentLoaded', function() {
   var firstTab = document.querySelector('.visa-tab');
   if (firstTab) firstTab.click();
 });
+
+
 /* ── Visa type selector ── */
+
+
 document.querySelectorAll('.vts-btn').forEach(function(btn) {
   btn.addEventListener('click', function() {
     var selector = btn.closest('.visa-type-selector');
@@ -410,7 +475,11 @@ document.querySelectorAll('.vts-btn').forEach(function(btn) {
   });
 });
 
+
+
 /* ── Visa WhatsApp apply ── */
+
+
 function applyVisaWA(country, btn) {
   var panel = btn.closest('.visa-panel');
 
@@ -467,7 +536,11 @@ function applyVisaWA(country, btn) {
 // Please confirm the current fee, processing time, and next steps. Thank you!
 
 
+
+
 /* ── Video sound toggle ── */
+
+
 function toggleSound() {
   var video = document.getElementById('tdVideo');
   var btn = document.getElementById('soundBtn');
@@ -477,6 +550,8 @@ function toggleSound() {
 
 
 /* ── Loading screen ── */
+
+
 function hideLoader() {
   var loader = document.getElementById('loader');
   if (loader) loader.classList.add('hide');
@@ -487,6 +562,8 @@ window.addEventListener('load', function() {
 });
 
 /* ── WhatsApp popup ── */
+
+
 function closeWaPopup() {
   document.getElementById('waPopup').classList.remove('show');
   sessionStorage.setItem('waPopupClosed', '1');
@@ -502,6 +579,8 @@ setTimeout(function() {
 
 
 /* ══ FLIGHT SEARCH ══ */
+
+
 var fltTripType = 'return';
 
 function setTrip(btn, type) {
@@ -569,6 +648,8 @@ function searchFlight() {
 
   window.open('https://wa.me/8801878072988?text=' + encodeURIComponent(msg), '_blank');
 }
+
+
 
 // The output will look like this on **both desktop and mobile**:
 
