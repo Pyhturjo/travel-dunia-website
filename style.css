@@ -275,10 +275,10 @@ ul { list-style: none; }
 .airlines-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-  gap: 16px;
+  gap: 5px;
 }
 .airline-card {
-  display: flex; align-items: center; gap: 14px;
+  display: flex; align-items: center; gap:2px;
   padding: 18px 20px;
   background: rgba(255,255,255,.07);
   border: 1px solid rgba(255,255,255,.12);
@@ -299,7 +299,7 @@ ul { list-style: none; }
   padding: 4px;
 }
 .airline-info { min-width: 0; }
-.airline-name  { font-weight: 700; color: #fff; font-size: .9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.airline-name  { font-weight: 700; color: #fff; font-size: .9rem; white-space: normal; overflow: hidden; text-overflow: ellipsis; }
 .airline-route { font-size: .72rem; color: rgba(255,255,255,.48); margin-top: 3px; }
 
 .airline-logo-img {
