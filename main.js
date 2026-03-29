@@ -9,9 +9,9 @@
     if (!cleanId) { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
     var target = document.getElementById(cleanId);
     if (!target) return;
-    var hdr    = document.getElementById('siteHeader');
+    var hdr = document.getElementById('siteHeader');
     var offset = hdr ? hdr.offsetHeight + 12 : 80;
-    var top    = target.getBoundingClientRect().top + window.scrollY - offset;
+    var top = target.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
   }
 
@@ -55,19 +55,19 @@
     if (!b) return;
     var sp = b.querySelectorAll('span');
     sp[0].style.transform = '';
-    sp[1].style.opacity   = '';
+    sp[1].style.opacity = '';
     sp[2].style.transform = '';
   }
 
   function initBurger() {
     var burger = document.getElementById('burger');
-    var nav    = document.getElementById('mainNav');
+    var nav = document.getElementById('mainNav');
     if (!burger || !nav) return;
     burger.addEventListener('click', function () {
       var open = nav.classList.toggle('open');
-      var sp   = burger.querySelectorAll('span');
+      var sp = burger.querySelectorAll('span');
       sp[0].style.transform = open ? 'rotate(45deg) translate(5px,5px)' : '';
-      sp[1].style.opacity   = open ? '0' : '';
+      sp[1].style.opacity = open ? '0' : '';
       sp[2].style.transform = open ? 'rotate(-45deg) translate(5px,-5px)' : '';
       burger.setAttribute('aria-expanded', open);
     });
@@ -88,10 +88,10 @@
   function initHero() {
     var wrapper = document.getElementById('heroSlides');
     if (!wrapper) return;
-    var slides  = Array.from(wrapper.querySelectorAll('.hs'));
-    var dots    = Array.from(document.querySelectorAll('.hd'));
+    var slides = Array.from(wrapper.querySelectorAll('.hs'));
+    var dots = Array.from(document.querySelectorAll('.hd'));
     var current = 0;
-    var timer   = null;
+    var timer = null;
 
     function goTo(i) {
       if (dots[current]) dots[current].classList.remove('active');
@@ -99,7 +99,7 @@
       if (dots[current]) dots[current].classList.add('active');
       wrapper.style.transform = 'translateX(-' + (current * 100) + '%)';
     }
-    function startTimer() { timer = setInterval(function(){ goTo(current + 1); }, 5500); }
+    function startTimer() { timer = setInterval(function () { goTo(current + 1); }, 5500); }
     function resetTimer() { clearInterval(timer); startTimer(); }
 
     goTo(0);
@@ -107,17 +107,19 @@
 
     var prev = document.getElementById('hPrev');
     var next = document.getElementById('hNext');
-    if (prev) prev.addEventListener('click', function(){ goTo(current - 1); resetTimer(); });
-    if (next) next.addEventListener('click', function(){ goTo(current + 1); resetTimer(); });
-    dots.forEach(function(d) {
-      d.addEventListener('click', function(){ goTo(+d.dataset.i); resetTimer(); });
+    if (prev) prev.addEventListener('click', function () { goTo(current - 1); resetTimer(); });
+    if (next) next.addEventListener('click', function () { goTo(current + 1); resetTimer(); });
+    dots.forEach(function (d) {
+      d.addEventListener('click', function () { goTo(+d.dataset.i); resetTimer(); });
     });
 
 
     // Touch swipe
-    
-    wrapper.addEventListener('touchstart', function(e){ tx = e.touches[0].clientX; }, { passive: true });
-    wrapper.addEventListener('touchend', function(e){
+
+    var tx = 0;
+
+    wrapper.addEventListener('touchstart', function (e) { tx = e.touches[0].clientX; }, { passive: true });
+    wrapper.addEventListener('touchend', function (e) {
       var diff = tx - e.changedTouches[0].clientX;
       if (Math.abs(diff) > 40) { goTo(diff > 0 ? current + 1 : current - 1); resetTimer(); }
     });
@@ -128,14 +130,14 @@
 
 
   function initFilters() {
-    var chips    = Array.from(document.querySelectorAll('.fchip'));
-    var cards    = Array.from(document.querySelectorAll('.tc[data-dest]'));
+    var chips = Array.from(document.querySelectorAll('.fchip'));
+    var cards = Array.from(document.querySelectorAll('.tc[data-dest]'));
     var noResult = document.getElementById('noResults');
     if (!chips.length) return;
 
     function applyFilter(f) {
       var vis = 0;
-      cards.forEach(function(card) {
+      cards.forEach(function (card) {
         var show = f === 'all' || card.getAttribute('data-dest') === f;
         if (show) {
           card.classList.remove('is-hidden');
@@ -147,9 +149,9 @@
       if (noResult) noResult.classList.toggle('visible', vis === 0);
     }
 
-    chips.forEach(function(chip) {
-      chip.addEventListener('click', function() {
-        chips.forEach(function(c){ c.classList.remove('active'); });
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        chips.forEach(function (c) { c.classList.remove('active'); });
         chip.classList.add('active');
         applyFilter(chip.getAttribute('data-filter'));
       });
@@ -163,14 +165,14 @@
   function initSearch() {
     var form = document.getElementById('searchForm');
     if (!form) return;
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
       var dest = form.dest ? form.dest.value : '';
       if (dest) {
         var chip = document.querySelector('.fchip[data-filter="' + dest + '"]');
         if (chip) {
           chip.click();
-          showToast('🔍 Showing tours to ' + dest.replace(/-/g,' ').replace(/\b\w/g, function(c){ return c.toUpperCase(); }));
+          showToast('🔍 Showing tours to ' + dest.replace(/-/g, ' ').replace(/\b\w/g, function (c) { return c.toUpperCase(); }));
         } else {
           showToast('Browse our available tours below!');
         }
@@ -190,7 +192,7 @@
   function initTestimonials() {
     var track = document.getElementById('testiTrack');
     if (!track) return;
-    var cards   = Array.from(track.querySelectorAll('.tcard'));
+    var cards = Array.from(track.querySelectorAll('.tcard'));
     var current = 0;
 
     function getVis() {
@@ -198,12 +200,12 @@
     }
 
     function update() {
-      var vis   = getVis();
-      var max   = Math.max(0, cards.length - vis);
-      current   = Math.min(current, max);
-      var pct   = 100 / vis;
-      var gap   = 20; // px gap between cards
-      cards.forEach(function(c) {
+      var vis = getVis();
+      var max = Math.max(0, cards.length - vis);
+      current = Math.min(current, max);
+      var pct = 100 / vis;
+      var gap = 20; // px gap between cards
+      cards.forEach(function (c) {
         c.style.flex = '0 0 calc(' + pct + '% - ' + (gap * (vis - 1) / vis) + 'px)';
       });
 
@@ -211,25 +213,25 @@
       // Use pixel offset calculation
 
 
-      var cardEl    = cards[0];
+      var cardEl = cards[0];
       var cardWidth = cardEl ? (cardEl.getBoundingClientRect().width + gap) : 0;
       track.style.transform = 'translateX(-' + (current * cardWidth) + 'px)';
     }
 
     var tNext = document.getElementById('tNext');
     var tPrev = document.getElementById('tPrev');
-    if (tNext) tNext.addEventListener('click', function() {
+    if (tNext) tNext.addEventListener('click', function () {
       if (current < cards.length - getVis()) { current++; update(); }
     });
-    if (tPrev) tPrev.addEventListener('click', function() {
+    if (tPrev) tPrev.addEventListener('click', function () {
       if (current > 0) { current--; update(); }
     });
 
     update();
     var rt;
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', function () {
       clearTimeout(rt);
-      rt = setTimeout(function(){ current = 0; update(); }, 120);
+      rt = setTimeout(function () { current = 0; update(); }, 120);
     });
   }
 
@@ -244,10 +246,10 @@
     if (!els.length) return;
 
     function animateCounter(target) {
-      var end  = +target.dataset.to;
-      var dur  = 1800;
+      var end = +target.dataset.to;
+      var dur = 1800;
       var step = end / (dur / 16);
-      var val  = 0;
+      var val = 0;
       function tick() {
         val = Math.min(val + step, end);
         target.textContent = Math.floor(val).toLocaleString() + '+';
@@ -258,17 +260,17 @@
     }
 
     if ('IntersectionObserver' in window) {
-      var ob = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
+      var ob = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
           if (entry.isIntersecting) {
             animateCounter(entry.target);
             ob.unobserve(entry.target);
           }
         });
       }, { threshold: 0.3 });
-      els.forEach(function(el) { ob.observe(el); });
+      els.forEach(function (el) { ob.observe(el); });
     } else {
-      els.forEach(function(el) { animateCounter(el); });
+      els.forEach(function (el) { animateCounter(el); });
     }
   }
 
@@ -281,19 +283,19 @@
   function initAnimations() {
     var animEls = document.querySelectorAll('.anim');
 
-    setTimeout(function() {
-      animEls.forEach(function(el) { el.classList.add('in'); });
+    setTimeout(function () {
+      animEls.forEach(function (el) { el.classList.add('in'); });
     }, 2000);
 
     if (!('IntersectionObserver' in window)) {
       // No IO support — show everything immediately
-      animEls.forEach(function(el) { el.classList.add('in'); });
+      animEls.forEach(function (el) { el.classList.add('in'); });
       return;
     }
 
 
-    var ob = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
+    var ob = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('in');
           ob.unobserve(entry.target);
@@ -301,7 +303,7 @@
       });
     }, { threshold: 0.04, rootMargin: '0px 0px -10px 0px' });
 
-    animEls.forEach(function(el) {
+    animEls.forEach(function (el) {
       // If element is already in viewport on page load, show it immediately
       var rect = el.getBoundingClientRect();
       if (rect.top < window.innerHeight && rect.bottom > 0) {
@@ -319,7 +321,7 @@
 
   function initScrollTop() {
     var stt = document.getElementById('stt');
-    if (stt) stt.addEventListener('click', function() {
+    if (stt) stt.addEventListener('click', function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
@@ -329,28 +331,28 @@
   /* ── Contact form ── */
 
 
- function initContactForm() {
+  function initContactForm() {
     var form = document.getElementById('contactForm');
     if (!form) return;
 
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      var name  = (form.elements['name']        ? form.elements['name'].value        : '').trim();
-      var phone = (form.elements['phone']       ? form.elements['phone'].value       : '').trim();
-      var email = (form.elements['email']       ? form.elements['email'].value       : '').trim();
-      var dest  = (form.elements['destination'] ? form.elements['destination'].value : '').trim();
-      var date  = (form.elements['date']        ? form.elements['date'].value        : '').trim();
-      var msg   = (form.elements['message']     ? form.elements['message'].value     : '').trim();
-      if (!name)  { showToast('⚠️ Please enter your full name.'); return; }
+      var name = (form.elements['name'] ? form.elements['name'].value : '').trim();
+      var phone = (form.elements['phone'] ? form.elements['phone'].value : '').trim();
+      var email = (form.elements['email'] ? form.elements['email'].value : '').trim();
+      var dest = (form.elements['destination'] ? form.elements['destination'].value : '').trim();
+      var date = (form.elements['date'] ? form.elements['date'].value : '').trim();
+      var msg = (form.elements['message'] ? form.elements['message'].value : '').trim();
+      if (!name) { showToast('⚠️ Please enter your full name.'); return; }
       if (!phone) { showToast('⚠️ Please enter your WhatsApp number.'); return; }
 
       var dateStr = '';
       if (date) {
         try {
           var d = new Date(date);
-          dateStr = d.toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' });
-        } catch(err) { dateStr = date; }
+          dateStr = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+        } catch (err) { dateStr = date; }
       }
 
       var lines = [];
@@ -361,10 +363,10 @@
       lines.push('━━━━━━━━━━━━━━━━━━━━');
       lines.push('👤 *Name:* ' + name);
       lines.push('📱 *My WhatsApp:* ' + phone);
-      if (email)   lines.push('📧 *Email:* ' + email);
-      if (dest)    lines.push('🌍 *Destination:* ' + dest);
+      if (email) lines.push('📧 *Email:* ' + email);
+      if (dest) lines.push('🌍 *Destination:* ' + dest);
       if (dateStr) lines.push('📅 *Travel Date:* ' + dateStr);
-      if (msg)     lines.push('💬 *Message:* ' + msg);
+      if (msg) lines.push('💬 *Message:* ' + msg);
       lines.push('━━━━━━━━━━━━━━━━━━━━');
       lines.push('Please get back to me with the best available packages. Thank you!');
 
@@ -381,14 +383,14 @@
 
   /* ── FAQ accordion ── */
 
-  
+
   function initFAQ() {
-    document.querySelectorAll('.faq-item').forEach(function(item) {
+    document.querySelectorAll('.faq-item').forEach(function (item) {
       var q = item.querySelector('.faq-q');
       if (!q) return;
-      q.addEventListener('click', function() {
+      q.addEventListener('click', function () {
         var isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item.open').forEach(function(o){ o.classList.remove('open'); });
+        document.querySelectorAll('.faq-item.open').forEach(function (o) { o.classList.remove('open'); });
         if (!isOpen) item.classList.add('open');
       });
     });
@@ -405,7 +407,7 @@
     clearTimeout(t._timer);
     t.textContent = msg;
     t.classList.add('show');
-    t._timer = setTimeout(function(){ t.classList.remove('show'); }, 4000);
+    t._timer = setTimeout(function () { t.classList.remove('show'); }, 4000);
   }
   window.showToast = showToast;
 
@@ -414,7 +416,7 @@
   /* ── INIT ── */
 
 
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     initHeader();
     initBurger();
     initHero();
@@ -434,12 +436,12 @@
 /* ── Visa tabs ── */
 
 
-document.querySelectorAll('.visa-tab').forEach(function(tab) {
-  tab.addEventListener('click', function() {
+document.querySelectorAll('.visa-tab').forEach(function (tab) {
+  tab.addEventListener('click', function () {
     var country = tab.getAttribute('data-country');
-    document.querySelectorAll('.visa-tab').forEach(function(t) { t.classList.remove('active'); });
+    document.querySelectorAll('.visa-tab').forEach(function (t) { t.classList.remove('active'); });
     tab.classList.add('active');
-    document.querySelectorAll('.visa-panel').forEach(function(p) { p.classList.remove('active'); });
+    document.querySelectorAll('.visa-panel').forEach(function (p) { p.classList.remove('active'); });
     var panel = document.querySelector('.visa-panel[data-panel="' + country + '"]');
     if (panel) panel.classList.add('active');
   });
@@ -450,7 +452,7 @@ document.querySelectorAll('.visa-tab').forEach(function(tab) {
 /* ── Activate first visa tab on load ── */
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var firstTab = document.querySelector('.visa-tab');
   if (firstTab) firstTab.click();
 });
@@ -459,17 +461,17 @@ document.addEventListener('DOMContentLoaded', function() {
 /* ── Visa type selector ── */
 
 
-document.querySelectorAll('.vts-btn').forEach(function(btn) {
-  btn.addEventListener('click', function() {
+document.querySelectorAll('.vts-btn').forEach(function (btn) {
+  btn.addEventListener('click', function () {
     var selector = btn.closest('.visa-type-selector');
     var country = selector.getAttribute('data-country');
     var type = btn.getAttribute('data-type');
 
-    selector.querySelectorAll('.vts-btn').forEach(function(b) { b.classList.remove('active'); });
+    selector.querySelectorAll('.vts-btn').forEach(function (b) { b.classList.remove('active'); });
     btn.classList.add('active');
 
     var panel = btn.closest('.visa-panel');
-    panel.querySelectorAll('.vdocs').forEach(function(d) {
+    panel.querySelectorAll('.vdocs').forEach(function (d) {
       d.style.display = d.getAttribute('data-for') === country + '-' + type ? '' : 'none';
     });
   });
@@ -489,7 +491,7 @@ function applyVisaWA(country, btn) {
   var activeDoc = panel.querySelector('.vdocs:not([style*="none"])');
   var docItems = [];
   if (activeDoc) {
-    activeDoc.querySelectorAll('li').forEach(function(li) {
+    activeDoc.querySelectorAll('li').forEach(function (li) {
       docItems.push('  - ' + li.textContent.trim());
     });
   }
@@ -557,7 +559,7 @@ function hideLoader() {
   if (loader) loader.classList.add('hide');
 }
 setTimeout(hideLoader, 2500);
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
   setTimeout(hideLoader, 400);
 });
 
@@ -568,7 +570,7 @@ function closeWaPopup() {
   document.getElementById('waPopup').classList.remove('show');
   sessionStorage.setItem('waPopupClosed', '1');
 }
-setTimeout(function() {
+setTimeout(function () {
   if (!sessionStorage.getItem('waPopupClosed')) {
     var popup = document.getElementById('waPopup');
     if (popup) popup.classList.add('show');
@@ -585,7 +587,7 @@ var fltTripType = 'return';
 
 function setTrip(btn, type) {
   fltTripType = type;
-  document.querySelectorAll('.flt-tab').forEach(function(t) {
+  document.querySelectorAll('.flt-tab').forEach(function (t) {
     t.classList.remove('active');
   });
   btn.classList.add('active');
@@ -595,21 +597,21 @@ function setTrip(btn, type) {
 
 function swapCities() {
   var from = document.getElementById('flt-from');
-  var to   = document.getElementById('flt-to');
+  var to = document.getElementById('flt-to');
   if (!from || !to) return;
-  var tmp  = from.value;
+  var tmp = from.value;
   from.value = to.value;
-  to.value   = tmp;
+  to.value = tmp;
 }
 
 function searchFlight() {
-  var from   = document.getElementById('flt-from');
-  var to     = document.getElementById('flt-to');
+  var from = document.getElementById('flt-from');
+  var to = document.getElementById('flt-to');
   var depart = document.getElementById('flt-depart');
-  var ret    = document.getElementById('flt-return');
-  var pax    = document.getElementById('flt-pax');
-  var cls    = document.getElementById('flt-class');
-  var time   = document.getElementById('flt-time');
+  var ret = document.getElementById('flt-return');
+  var pax = document.getElementById('flt-pax');
+  var cls = document.getElementById('flt-class');
+  var time = document.getElementById('flt-time');
 
   if (!to || !to.value) {
     alert('Please select a destination.');
@@ -620,28 +622,28 @@ function searchFlight() {
     return;
   }
 
-  var fromVal   = from   ? from.value   : 'Dhaka (DAC)';
-  var toVal     = to.value;
+  var fromVal = from ? from.value : 'Dhaka (DAC)';
+  var toVal = to.value;
   var departVal = depart.value;
-  var retVal    = (ret && ret.value && fltTripType === 'return') ? ret.value : '';
-  var paxVal    = pax    ? pax.value    : '1 Adult';
-  var clsVal    = cls    ? cls.value    : 'Economy';
-  var timeVal   = time   ? time.value   : 'Any Time';
-  var tripVal   = fltTripType === 'return' ? 'Return' : fltTripType === 'oneway' ? 'One Way' : 'Multi-city';
+  var retVal = (ret && ret.value && fltTripType === 'return') ? ret.value : '';
+  var paxVal = pax ? pax.value : '1 Adult';
+  var clsVal = cls ? cls.value : 'Economy';
+  var timeVal = time ? time.value : 'Any Time';
+  var tripVal = fltTripType === 'return' ? 'Return' : fltTripType === 'oneway' ? 'One Way' : 'Multi-city';
 
   var msg = '';
   msg += 'Hello Travel Dunia!\n\n';
   msg += '*FLIGHT PRICE REQUEST*\n';
   msg += '================================\n';
-  msg += '*From        :* ' + fromVal   + '\n';
-  msg += '*To          :* ' + toVal     + '\n';
+  msg += '*From        :* ' + fromVal + '\n';
+  msg += '*To          :* ' + toVal + '\n';
   msg += '*Depart Date :* ' + departVal + '\n';
   if (retVal)
-  msg += '*Return Date :* ' + retVal    + '\n';
-  msg += '*Passengers  :* ' + paxVal    + '\n';
-  msg += '*Class       :* ' + clsVal    + '\n';
-  msg += '*Time        :* ' + timeVal   + '\n';
-  msg += '*Trip Type   :* ' + tripVal   + '\n';
+    msg += '*Return Date :* ' + retVal + '\n';
+  msg += '*Passengers  :* ' + paxVal + '\n';
+  msg += '*Class       :* ' + clsVal + '\n';
+  msg += '*Time        :* ' + timeVal + '\n';
+  msg += '*Trip Type   :* ' + tripVal + '\n';
   msg += '================================\n';
   msg += 'Please share the best available fare.\n';
   msg += 'Thank you!';
