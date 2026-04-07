@@ -344,8 +344,9 @@
       var dest = (form.elements['destination'] ? form.elements['destination'].value : '').trim();
       var date = (form.elements['date'] ? form.elements['date'].value : '').trim();
       var msg = (form.elements['message'] ? form.elements['message'].value : '').trim();
-      if (!name) { showToast('⚠️ Please enter your full name.'); return; }
-      if (!phone) { showToast('⚠️ Please enter your WhatsApp number.'); return; }
+
+      if (!name) { showToast('Please enter your full name.'); return; }
+      if (!phone) { showToast('Please enter your WhatsApp number.'); return; }
 
       var dateStr = '';
       if (date) {
@@ -356,25 +357,25 @@
       }
 
       var lines = [];
-      lines.push('Hello Travel Dunia! 👋');
+      lines.push('Hello Travel Dunia!');
       lines.push('I would like to inquire about a tour package.');
       lines.push('');
-      lines.push('📋 *Booking Inquiry Details*');
-      lines.push('━━━━━━━━━━━━━━━━━━━━');
-      lines.push('👤 *Name:* ' + name);
-      lines.push('📱 *My WhatsApp:* ' + phone);
-      if (email) lines.push('📧 *Email:* ' + email);
-      if (dest) lines.push('🌍 *Destination:* ' + dest);
-      if (dateStr) lines.push('📅 *Travel Date:* ' + dateStr);
-      if (msg) lines.push('💬 *Message:* ' + msg);
-      lines.push('━━━━━━━━━━━━━━━━━━━━');
+      lines.push('*BOOKING INQUIRY*');
+      lines.push('================================');
+      lines.push('*Name:* ' + name);
+      lines.push('*WhatsApp:* ' + phone);
+      if (email) lines.push('*Email:* ' + email);
+      if (dest) lines.push('*Destination:* ' + dest);
+      if (dateStr) lines.push('*Travel Date:* ' + dateStr);
+      if (msg) lines.push('*Message:* ' + msg);
+      lines.push('================================');
       lines.push('Please get back to me with the best available packages. Thank you!');
 
       var waMessage = lines.join('\n');
       var waURL = 'https://wa.me/8801878072988?text=' + encodeURIComponent(waMessage);
 
       window.open(waURL, '_blank');
-      showToast('✅ Opening WhatsApp with your details...');
+      showToast('Opening WhatsApp with your details...');
       form.reset();
     });
   }
