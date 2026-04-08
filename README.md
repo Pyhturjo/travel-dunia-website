@@ -5,7 +5,7 @@
 A responsive, static travel website built with **HTML, CSS, and JavaScript**.  
 This project showcases destinations, packages, and basic UI interactions for a travel brand concept called **Travel Dunia**.
 
-🔗 Live Demo: https://pyhturjo.github.io/travel-dunia-website/
+🔗 Live : traveldunia.com.bd
 
 ---
 
